@@ -61,7 +61,7 @@ import UIKit
         
     @IBAction func moveToBottom(_ sender: Any) {
        UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
-        if (self.imageYPosition != 533.5) {
+        if (self.imageYPosition < Double(UIScreen.main.bounds.height) - Double(self.bottomMage.bounds.height)) {
             self.circle.center.y += 25
             self.imageYPosition = Double(self.circle.center.y)
             print(self.imageYPosition)
@@ -78,7 +78,7 @@ import UIKit
        
     @IBAction func moveToTop(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
-            if (self.imageYPosition != 133.5) {
+            if (self.imageYPosition > Double(self.buttonTopStyle.bounds.height)) {
                 self.circle.center.y -= 25
                 self.imageYPosition = Double(self.circle.center.y)
                 print(self.imageYPosition)
