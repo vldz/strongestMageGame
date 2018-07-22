@@ -10,10 +10,10 @@
 		882582D520BED6220005969D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582D420BED6220005969D /* AppDelegate.swift */; };
 		882582D720BED6220005969D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582D620BED6220005969D /* ViewController.swift */; };
 		882582DA20BED6220005969D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882582D820BED6220005969D /* Main.storyboard */; };
-		882582DC20BED6240005969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882582DB20BED6240005969D /* Assets.xcassets */; };
 		882582DF20BED6240005969D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882582DD20BED6240005969D /* LaunchScreen.storyboard */; };
 		882582EA20BED6250005969D /* strongest_mageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582E920BED6250005969D /* strongest_mageTests.swift */; };
 		882582F520BED6250005969D /* strongest_mageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582F420BED6250005969D /* strongest_mageUITests.swift */; };
+		885B229B20BF47BD009AEFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885B229A20BF47BD009AEFA5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		882582D420BED6220005969D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882582D620BED6220005969D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		882582D920BED6220005969D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		882582DB20BED6240005969D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882582DE20BED6240005969D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		882582E020BED6240005969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		882582E520BED6250005969D /* strongest mageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strongest mageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		882582F020BED6250005969D /* strongest mageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strongest mageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		882582F420BED6250005969D /* strongest_mageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strongest_mageUITests.swift; sourceTree = "<group>"; };
 		882582F620BED6250005969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885B229A20BF47BD009AEFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +97,10 @@
 		882582D320BED6220005969D /* strongest mage */ = {
 			isa = PBXGroup;
 			children = (
+				885B229A20BF47BD009AEFA5 /* Assets.xcassets */,
 				882582D420BED6220005969D /* AppDelegate.swift */,
 				882582D620BED6220005969D /* ViewController.swift */,
 				882582D820BED6220005969D /* Main.storyboard */,
-				882582DB20BED6240005969D /* Assets.xcassets */,
 				882582DD20BED6240005969D /* LaunchScreen.storyboard */,
 				882582E020BED6240005969D /* Info.plist */,
 			);
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				882582DF20BED6240005969D /* LaunchScreen.storyboard in Resources */,
-				882582DC20BED6240005969D /* Assets.xcassets in Resources */,
+				885B229B20BF47BD009AEFA5 /* Assets.xcassets in Resources */,
 				882582DA20BED6220005969D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
