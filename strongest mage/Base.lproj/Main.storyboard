@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="150" id="Mu7-mk-ea9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" image="newGoodMage">
+                                <state key="normal" image="newTopMage">
                                     <color key="titleColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -45,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="150" id="Yek-Nm-Jdb" userLabel="height = 150"/>
                                     <constraint firstAttribute="width" constant="125" id="zwU-Ks-pNG"/>
                                 </constraints>
-                                <state key="normal" image="newMage">
+                                <state key="normal" image="newBottomMage">
                                     <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -172,11 +172,11 @@
     <resources>
         <image name="100" width="1166" height="1333"/>
         <image name="bottommage-won" width="3500" height="1750"/>
-        <image name="newGoodMage" width="3500" height="4000"/>
-        <image name="newMage" width="3500" height="4000"/>
-        <image name="ready!" width="3500" height="1750"/>
+        <image name="newBottomMage" width="1750" height="2000"/>
+        <image name="newTopMage" width="1750" height="2000"/>
+        <image name="ready!" width="1166" height="583"/>
         <image name="ready-" width="1166" height="583"/>
-        <image name="restart!" width="3500" height="1750"/>
+        <image name="restart!" width="1166" height="583"/>
         <image name="topmage-won" width="3500" height="1750"/>
     </resources>
 </document>
