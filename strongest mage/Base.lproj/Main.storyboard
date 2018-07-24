@@ -124,20 +124,14 @@
                                     <action selector="restarttopF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CV4-8v-vkV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BottomTimerLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMe-gN-HUl">
-                                <rect key="frame" x="274" y="547" width="141" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2v5-2k-VTM">
+                                <rect key="frame" x="0.0" y="120" width="148" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TopTimerLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTb-yW-nJ8">
-                                <rect key="frame" x="24" y="115" width="113" height="21"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YL0-zs-sN9">
+                                <rect key="frame" x="227" y="523" width="148" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -169,7 +163,7 @@
                     <connections>
                         <outlet property="bottomMage" destination="nY1-rO-FEf" id="74T-y9-Ef4"/>
                         <outlet property="bottomMageWon" destination="KLJ-y7-hYD" id="sd6-oq-0gi"/>
-                        <outlet property="bottomTimerLabel" destination="cMe-gN-HUl" id="utO-vw-kis"/>
+                        <outlet property="bottomTimerImage" destination="YL0-zs-sN9" id="qQy-L0-oRz"/>
                         <outlet property="buttonTopStyle" destination="ODf-kR-1wI" id="zDq-Vw-Wmr"/>
                         <outlet property="circle" destination="w7Y-Xq-qvp" id="Os5-ta-BfH"/>
                         <outlet property="readyBottomPressed" destination="hF6-fP-RKY" id="Typ-Zo-XW0"/>
@@ -179,7 +173,7 @@
                         <outlet property="restartBottom" destination="DQ8-Io-jhL" id="7hd-iX-1dz"/>
                         <outlet property="restartTop" destination="dhu-Ux-x1y" id="COq-cj-hvH"/>
                         <outlet property="topMageWon" destination="M5E-wf-Tc3" id="Fmx-Qb-H8P"/>
-                        <outlet property="topTimerLabel" destination="BTb-yW-nJ8" id="Cue-nG-yD1"/>
+                        <outlet property="topTimerImage" destination="2v5-2k-VTM" id="7kQ-DU-9pc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
