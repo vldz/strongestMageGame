@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var readyTop: UIButton!
     @IBOutlet weak var readyTopPressed: UIImageView!
     @IBOutlet weak var readyBottomPressed: UIImageView!
+    @IBOutlet weak var topTimerLabel: UILabel!
+    @IBOutlet weak var bottomTimerLabel: UILabel!
     
     @IBOutlet weak var restartBottom: UIButton!
     //@IBOutlet weak var restartTop: UIButton!
@@ -28,6 +30,8 @@ class ViewController: UIViewController {
     var imageYPosition = 0.0
     var readyCounter = 0
     var restartCounter = 0
+    var countdownTimer: Timer!
+    var totalTime = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +43,12 @@ class ViewController: UIViewController {
         readyTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         readyTopPressed.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         restartTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        topTimerLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        
+        topTimerLabel.text = String(totalTime)
+        bottomTimerLabel.text = String(totalTime)
+        topTimerLabel.isHidden = true
+        bottomTimerLabel.isHidden = true
         
         self.circle.center = view.center
     }
@@ -69,12 +79,9 @@ class ViewController: UIViewController {
     func readyF() {
         self.circle.center = view.center
         imageYPosition = Double(self.circle.center.y)
-        buttonTopStyle.isEnabled = true
-        bottomMage.isEnabled = true
-        circle.isHidden = false
-        readyTopPressed.isHidden = true
-        readyBottomPressed.isHidden = true
-        readyCounter = 0
+        topTimerLabel.isHidden = false
+        bottomTimerLabel.isHidden = false
+        startTimer()
     }
     
     @IBAction func moveToBottom(_ sender: Any) {
@@ -135,14 +142,41 @@ class ViewController: UIViewController {
     func restart() {
         self.circle.center = view.center
         imageYPosition = Double(self.circle.center.y)
+        bottomMageWon.isHidden = true
+        topMageWon.isHidden = true
+        topTimerLabel.isHidden = false
+        bottomTimerLabel.isHidden = false
+        startTimer()
+    }
+    
+    func startTimer() {
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    func endTimer() {
+        countdownTimer.invalidate()
+        topTimerLabel.isHidden = true
+        bottomTimerLabel.isHidden = true
         buttonTopStyle.isEnabled = true
         bottomMage.isEnabled = true
         circle.isHidden = false
-        self.readyTopPressed.isHidden = true
-        self.readyBottomPressed.isHidden = true
-        bottomMageWon.isHidden = true
-        topMageWon.isHidden = true
-        restartCounter = 0
+        readyTopPressed.isHidden = true
+        readyBottomPressed.isHidden = true
+        readyCounter = 0
+        totalTime = 3
+        topTimerLabel.text = String(totalTime)
+        bottomTimerLabel.text = String(totalTime)
+    }
+    
+    @objc
+    func updateTime() {
+        topTimerLabel.text = String(totalTime)
+        bottomTimerLabel.text = String(totalTime)
+        if totalTime != 0 {
+            totalTime -= 1
+        } else {
+            endTimer()
+        }
     }
 }
 
