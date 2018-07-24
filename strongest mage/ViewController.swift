@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottomTimerLabel: UILabel!
     
     @IBOutlet weak var restartBottom: UIButton!
-    //@IBOutlet weak var restartTop: UIButton!
     @IBOutlet weak var restartTop: UIButton!
     
     var imageYPosition = 0.0
