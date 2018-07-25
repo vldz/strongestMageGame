@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     var readyCounter = 0
     var restartCounter = 0
     var countdownTimer: Timer!
-    var totalTime = 4
+    var totalTime = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +43,8 @@ class ViewController: UIViewController {
         readyTopPressed.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         restartTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         topTimerImage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        topTimerImage.image = UIImage(named: String(totalTime - 1))
-        bottomTimerImage.image = UIImage(named: String(totalTime - 1))
+        topTimerImage.image = UIImage(named: String(totalTime))
+        bottomTimerImage.image = UIImage(named: String(totalTime))
         topTimerImage.isHidden = true
         bottomTimerImage.isHidden = true
         
@@ -161,18 +161,18 @@ class ViewController: UIViewController {
         readyTopPressed.isHidden = true
         readyBottomPressed.isHidden = true
         readyCounter = 0
-        totalTime = 4
-        topTimerImage.image = UIImage(named: String(totalTime - 1))
-        bottomTimerImage.image = UIImage(named: String(totalTime - 1))
+        totalTime = 3
+        topTimerImage.image = UIImage(named: String(totalTime))
+        bottomTimerImage.image = UIImage(named: String(totalTime))
     }
     
     @objc
     func updateTime() {
         totalTime -= 1
-        if totalTime > 1 {
-            topTimerImage.image = UIImage(named: String(totalTime - 1))
-            bottomTimerImage.image = UIImage(named: String(totalTime - 1))
-        } else if totalTime == 1 {
+        if totalTime > 0 {
+            topTimerImage.image = UIImage(named: String(totalTime))
+            bottomTimerImage.image = UIImage(named: String(totalTime))
+        } else if totalTime == 0 {
             topTimerImage.image = UIImage(named: "go!")
             bottomTimerImage.image = UIImage(named: "go!")
         } else {
