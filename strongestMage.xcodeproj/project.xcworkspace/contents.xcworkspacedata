@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:strongest mage.xcodeproj">
+      location = "self:/Users/dmytriiilchuk/Documents/strongestMageGame/strongestMage.xcodeproj">
    </FileRef>
 </Workspace>
