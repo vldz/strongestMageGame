@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var circle: UIImageView!
-    @IBOutlet weak var buttonTopStyle: UIButton!
+    @IBOutlet weak var topMage: UIButton!
     @IBOutlet weak var bottomMage: UIButton!
     @IBOutlet weak var bottomMageWon: UIImageView!
     @IBOutlet weak var topMageWon: UIImageView!
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.black
         
-        buttonTopStyle.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        topMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         topMageWon.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         readyTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         readyTopPressed.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
             } else {
                 self.topMageWon.isHidden = false
                 self.bottomMageWon.isHidden = true
-                self.buttonTopStyle.isEnabled = false
+                self.topMage.isEnabled = false
                 self.bottomMage.isEnabled = false
                 self.circle.isHidden = true
                 self.restartBottom.isHidden = false
@@ -102,14 +102,14 @@ class ViewController: UIViewController {
     
     @IBAction func moveToTop(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
-            if (self.imageYPosition > Double(self.buttonTopStyle.bounds.height)) {
+            if (self.imageYPosition > Double(self.topMage.bounds.height)) {
                 self.circle.center.y -= 25
                 self.imageYPosition = Double(self.circle.center.y)
                 print(self.imageYPosition)
             } else {
                 self.bottomMageWon.isHidden = false
                 self.topMageWon.isHidden = true
-                self.buttonTopStyle.isEnabled = false
+                self.topMage.isEnabled = false
                 self.bottomMage.isEnabled = false
                 self.circle.isHidden = true
                 self.restartBottom.isHidden = false
@@ -155,7 +155,7 @@ class ViewController: UIViewController {
         countdownTimer.invalidate()
         topTimerImage.isHidden = true
         bottomTimerImage.isHidden = true
-        buttonTopStyle.isEnabled = true
+        topMage.isEnabled = true
         bottomMage.isEnabled = true
         circle.isHidden = false
         readyTopPressed.isHidden = true

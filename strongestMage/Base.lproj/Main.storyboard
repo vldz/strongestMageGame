@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="strongest_mage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="strongestMage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,7 +164,6 @@
                         <outlet property="bottomMage" destination="nY1-rO-FEf" id="74T-y9-Ef4"/>
                         <outlet property="bottomMageWon" destination="KLJ-y7-hYD" id="sd6-oq-0gi"/>
                         <outlet property="bottomTimerImage" destination="YL0-zs-sN9" id="qQy-L0-oRz"/>
-                        <outlet property="buttonTopStyle" destination="ODf-kR-1wI" id="zDq-Vw-Wmr"/>
                         <outlet property="circle" destination="w7Y-Xq-qvp" id="Os5-ta-BfH"/>
                         <outlet property="readyBottomPressed" destination="hF6-fP-RKY" id="Typ-Zo-XW0"/>
                         <outlet property="readyButton" destination="NEk-1T-xLF" id="NvN-If-Y1m"/>
@@ -172,6 +171,7 @@
                         <outlet property="readyTopPressed" destination="w8z-PT-rzM" id="pEN-Nm-SrT"/>
                         <outlet property="restartBottom" destination="DQ8-Io-jhL" id="7hd-iX-1dz"/>
                         <outlet property="restartTop" destination="dhu-Ux-x1y" id="COq-cj-hvH"/>
+                        <outlet property="topMage" destination="ODf-kR-1wI" id="zDq-Vw-Wmr"/>
                         <outlet property="topMageWon" destination="M5E-wf-Tc3" id="Fmx-Qb-H8P"/>
                         <outlet property="topTimerImage" destination="2v5-2k-VTM" id="7kQ-DU-9pc"/>
                     </connections>
