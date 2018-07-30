@@ -10,10 +10,10 @@
 		882582D520BED6220005969D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582D420BED6220005969D /* AppDelegate.swift */; };
 		882582D720BED6220005969D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582D620BED6220005969D /* ViewController.swift */; };
 		882582DA20BED6220005969D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882582D820BED6220005969D /* Main.storyboard */; };
-		882582DC20BED6240005969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882582DB20BED6240005969D /* Assets.xcassets */; };
 		882582DF20BED6240005969D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882582DD20BED6240005969D /* LaunchScreen.storyboard */; };
 		882582EA20BED6250005969D /* strongest_mageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582E920BED6250005969D /* strongest_mageTests.swift */; };
 		882582F520BED6250005969D /* strongest_mageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582F420BED6250005969D /* strongest_mageUITests.swift */; };
+		885B229B20BF47BD009AEFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885B229A20BF47BD009AEFA5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +34,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		882582D120BED6220005969D /* strongest mage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "strongest mage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		882582D120BED6220005969D /* strongestMage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = strongestMage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882582D420BED6220005969D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882582D620BED6220005969D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		882582D920BED6220005969D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		882582DB20BED6240005969D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882582DE20BED6240005969D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		882582E020BED6240005969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		882582E520BED6250005969D /* strongest mageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strongest mageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		882582E520BED6250005969D /* strongestMageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = strongestMageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		882582E920BED6250005969D /* strongest_mageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strongest_mageTests.swift; sourceTree = "<group>"; };
 		882582EB20BED6250005969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		882582F020BED6250005969D /* strongest mageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strongest mageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		882582F020BED6250005969D /* strongestMageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = strongestMageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		882582F420BED6250005969D /* strongest_mageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strongest_mageUITests.swift; sourceTree = "<group>"; };
 		882582F620BED6250005969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885B229A20BF47BD009AEFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +77,9 @@
 		882582C820BED6210005969D = {
 			isa = PBXGroup;
 			children = (
-				882582D320BED6220005969D /* strongest mage */,
-				882582E820BED6250005969D /* strongest mageTests */,
-				882582F320BED6250005969D /* strongest mageUITests */,
+				882582D320BED6220005969D /* strongestMage */,
+				882582E820BED6250005969D /* strongestMageTests */,
+				882582F320BED6250005969D /* strongestMageUITests */,
 				882582D220BED6220005969D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,50 +87,50 @@
 		882582D220BED6220005969D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				882582D120BED6220005969D /* strongest mage.app */,
-				882582E520BED6250005969D /* strongest mageTests.xctest */,
-				882582F020BED6250005969D /* strongest mageUITests.xctest */,
+				882582D120BED6220005969D /* strongestMage.app */,
+				882582E520BED6250005969D /* strongestMageTests.xctest */,
+				882582F020BED6250005969D /* strongestMageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		882582D320BED6220005969D /* strongest mage */ = {
+		882582D320BED6220005969D /* strongestMage */ = {
 			isa = PBXGroup;
 			children = (
+				885B229A20BF47BD009AEFA5 /* Assets.xcassets */,
 				882582D420BED6220005969D /* AppDelegate.swift */,
 				882582D620BED6220005969D /* ViewController.swift */,
 				882582D820BED6220005969D /* Main.storyboard */,
-				882582DB20BED6240005969D /* Assets.xcassets */,
 				882582DD20BED6240005969D /* LaunchScreen.storyboard */,
 				882582E020BED6240005969D /* Info.plist */,
 			);
-			path = "strongest mage";
+			path = strongestMage;
 			sourceTree = "<group>";
 		};
-		882582E820BED6250005969D /* strongest mageTests */ = {
+		882582E820BED6250005969D /* strongestMageTests */ = {
 			isa = PBXGroup;
 			children = (
 				882582E920BED6250005969D /* strongest_mageTests.swift */,
 				882582EB20BED6250005969D /* Info.plist */,
 			);
-			path = "strongest mageTests";
+			path = strongestMageTests;
 			sourceTree = "<group>";
 		};
-		882582F320BED6250005969D /* strongest mageUITests */ = {
+		882582F320BED6250005969D /* strongestMageUITests */ = {
 			isa = PBXGroup;
 			children = (
 				882582F420BED6250005969D /* strongest_mageUITests.swift */,
 				882582F620BED6250005969D /* Info.plist */,
 			);
-			path = "strongest mageUITests";
+			path = strongestMageUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		882582D020BED6220005969D /* strongest mage */ = {
+		882582D020BED6220005969D /* strongestMage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 882582F920BED6250005969D /* Build configuration list for PBXNativeTarget "strongest mage" */;
+			buildConfigurationList = 882582F920BED6250005969D /* Build configuration list for PBXNativeTarget "strongestMage" */;
 			buildPhases = (
 				882582CD20BED6220005969D /* Sources */,
 				882582CE20BED6220005969D /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = "strongest mage";
+			name = strongestMage;
 			productName = "strongest mage";
-			productReference = 882582D120BED6220005969D /* strongest mage.app */;
+			productReference = 882582D120BED6220005969D /* strongestMage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		882582E420BED6250005969D /* strongest mageTests */ = {
+		882582E420BED6250005969D /* strongestMageTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 882582FC20BED6250005969D /* Build configuration list for PBXNativeTarget "strongest mageTests" */;
+			buildConfigurationList = 882582FC20BED6250005969D /* Build configuration list for PBXNativeTarget "strongestMageTests" */;
 			buildPhases = (
 				882582E120BED6250005969D /* Sources */,
 				882582E220BED6250005969D /* Frameworks */,
@@ -158,14 +158,14 @@
 			dependencies = (
 				882582E720BED6250005969D /* PBXTargetDependency */,
 			);
-			name = "strongest mageTests";
+			name = strongestMageTests;
 			productName = "strongest mageTests";
-			productReference = 882582E520BED6250005969D /* strongest mageTests.xctest */;
+			productReference = 882582E520BED6250005969D /* strongestMageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		882582EF20BED6250005969D /* strongest mageUITests */ = {
+		882582EF20BED6250005969D /* strongestMageUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 882582FF20BED6250005969D /* Build configuration list for PBXNativeTarget "strongest mageUITests" */;
+			buildConfigurationList = 882582FF20BED6250005969D /* Build configuration list for PBXNativeTarget "strongestMageUITests" */;
 			buildPhases = (
 				882582EC20BED6250005969D /* Sources */,
 				882582ED20BED6250005969D /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				882582F220BED6250005969D /* PBXTargetDependency */,
 			);
-			name = "strongest mageUITests";
+			name = strongestMageUITests;
 			productName = "strongest mageUITests";
-			productReference = 882582F020BED6250005969D /* strongest mageUITests.xctest */;
+			productReference = 882582F020BED6250005969D /* strongestMageUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 882582CC20BED6220005969D /* Build configuration list for PBXProject "strongest mage" */;
+			buildConfigurationList = 882582CC20BED6220005969D /* Build configuration list for PBXProject "strongestMage" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +217,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				882582D020BED6220005969D /* strongest mage */,
-				882582E420BED6250005969D /* strongest mageTests */,
-				882582EF20BED6250005969D /* strongest mageUITests */,
+				882582D020BED6220005969D /* strongestMage */,
+				882582E420BED6250005969D /* strongestMageTests */,
+				882582EF20BED6250005969D /* strongestMageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				882582DF20BED6240005969D /* LaunchScreen.storyboard in Resources */,
-				882582DC20BED6240005969D /* Assets.xcassets in Resources */,
+				885B229B20BF47BD009AEFA5 /* Assets.xcassets in Resources */,
 				882582DA20BED6220005969D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,12 +282,12 @@
 /* Begin PBXTargetDependency section */
 		882582E720BED6250005969D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 882582D020BED6220005969D /* strongest mage */;
+			target = 882582D020BED6220005969D /* strongestMage */;
 			targetProxy = 882582E620BED6250005969D /* PBXContainerItemProxy */;
 		};
 		882582F220BED6250005969D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 882582D020BED6220005969D /* strongest mage */;
+			target = 882582D020BED6220005969D /* strongestMage */;
 			targetProxy = 882582F120BED6250005969D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -432,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UB22FZ3J2;
-				INFOPLIST_FILE = "strongest mage/Info.plist";
+				INFOPLIST_FILE = strongestMage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UB22FZ3J2;
-				INFOPLIST_FILE = "strongest mage/Info.plist";
+				INFOPLIST_FILE = strongestMage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,7 +479,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/strongest mage.app/strongest mage";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/strongestMage.app/strongestMage";
 			};
 			name = Debug;
 		};
@@ -500,7 +500,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/strongest mage.app/strongest mage";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/strongestMage.app/strongestMage";
 			};
 			name = Release;
 		};
@@ -547,7 +547,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		882582CC20BED6220005969D /* Build configuration list for PBXProject "strongest mage" */ = {
+		882582CC20BED6220005969D /* Build configuration list for PBXProject "strongestMage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				882582F720BED6250005969D /* Debug */,
@@ -556,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		882582F920BED6250005969D /* Build configuration list for PBXNativeTarget "strongest mage" */ = {
+		882582F920BED6250005969D /* Build configuration list for PBXNativeTarget "strongestMage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				882582FA20BED6250005969D /* Debug */,
@@ -565,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		882582FC20BED6250005969D /* Build configuration list for PBXNativeTarget "strongest mageTests" */ = {
+		882582FC20BED6250005969D /* Build configuration list for PBXNativeTarget "strongestMageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				882582FD20BED6250005969D /* Debug */,
@@ -574,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		882582FF20BED6250005969D /* Build configuration list for PBXNativeTarget "strongest mageUITests" */ = {
+		882582FF20BED6250005969D /* Build configuration list for PBXNativeTarget "strongestMageUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8825830020BED6250005969D /* Debug */,
