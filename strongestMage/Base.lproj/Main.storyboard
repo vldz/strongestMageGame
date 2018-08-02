@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="DJB Im No Wizard.ttf">
+            <string>DJBImNoWizard</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -63,8 +68,8 @@
                                     <action selector="ready:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KmY-pN-2VK"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="topmage-won" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-wf-Tc3">
-                                <rect key="frame" x="-7" y="20" width="375" height="201"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="topmage-won" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-wf-Tc3">
+                                <rect key="frame" x="-7" y="172" width="375" height="201"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="VYL-AF-rAm"/>
                                     <constraint firstAttribute="height" constant="201" id="leX-so-Knq"/>
@@ -132,12 +137,18 @@
                                 <rect key="frame" x="227" y="523" width="148" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTc-cA-nRD">
+                                <rect key="frame" x="167" y="323.5" width="42" height="20"/>
+                                <fontDescription key="fontDescription" name="DJBImNoWizard" family="DJB Im No Wizard" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.38069436564695192" blue="0.58851368997293796" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Qjn-Mf-dDi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="5v8-es-38u"/>
                             <constraint firstItem="nY1-rO-FEf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6YI-H7-yvS"/>
-                            <constraint firstItem="w7Y-Xq-qvp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BFd-Sj-L4f"/>
+                            <constraint firstItem="eTc-cA-nRD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Acr-AW-IWJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NEk-1T-xLF" secondAttribute="trailing" constant="7" id="Bb9-xh-VxB"/>
                             <constraint firstItem="dhu-Ux-x1y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="DdH-yK-6fL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nY1-rO-FEf" secondAttribute="bottom" constant="11" id="Kyz-GK-K7Z"/>
@@ -145,7 +156,6 @@
                             <constraint firstItem="w7Y-Xq-qvp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N8g-uc-u66"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hF6-fP-RKY" secondAttribute="bottom" constant="20" id="OCg-7p-DA4"/>
                             <constraint firstItem="Qjn-Mf-dDi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="OgN-Cw-SKF"/>
-                            <constraint firstItem="w7Y-Xq-qvp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TEh-7f-g6T"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DQ8-Io-jhL" secondAttribute="trailing" constant="7" id="Zc9-pd-a3P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hF6-fP-RKY" secondAttribute="trailing" constant="7" id="bwO-Y5-RRl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NEk-1T-xLF" secondAttribute="bottom" constant="20" id="dTX-la-feb"/>
@@ -156,6 +166,7 @@
                             <constraint firstItem="w8z-PT-rzM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="qNn-hh-bex"/>
                             <constraint firstItem="w7Y-Xq-qvp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uo6-X0-2aP"/>
                             <constraint firstItem="ODf-kR-1wI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="upm-ft-cAM"/>
+                            <constraint firstItem="eTc-cA-nRD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ypM-Gs-faa"/>
                             <constraint firstItem="w8z-PT-rzM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="yrJ-SG-mfc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -165,6 +176,7 @@
                         <outlet property="bottomMageWon" destination="KLJ-y7-hYD" id="sd6-oq-0gi"/>
                         <outlet property="bottomTimerImage" destination="YL0-zs-sN9" id="qQy-L0-oRz"/>
                         <outlet property="circle" destination="w7Y-Xq-qvp" id="Os5-ta-BfH"/>
+                        <outlet property="infoLabel" destination="eTc-cA-nRD" id="3bc-aP-8g8"/>
                         <outlet property="readyBottomPressed" destination="hF6-fP-RKY" id="Typ-Zo-XW0"/>
                         <outlet property="readyButton" destination="NEk-1T-xLF" id="NvN-If-Y1m"/>
                         <outlet property="readyTop" destination="Qjn-Mf-dDi" id="qj5-IU-iTk"/>
@@ -191,4 +203,5 @@
         <image name="restart!" width="1750" height="875"/>
         <image name="topmage-won" width="3500" height="1750"/>
     </resources>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

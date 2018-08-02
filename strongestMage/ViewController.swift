@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Darwin
+import Foundation
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var circle: UIImageView!
     @IBOutlet weak var topMage: UIButton!
     @IBOutlet weak var bottomMage: UIButton!
+    
     @IBOutlet weak var bottomMageWon: UIImageView!
     @IBOutlet weak var topMageWon: UIImageView!
     
@@ -20,17 +23,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var readyTop: UIButton!
     @IBOutlet weak var readyTopPressed: UIImageView!
     @IBOutlet weak var readyBottomPressed: UIImageView!
+    
     @IBOutlet weak var topTimerImage: UIImageView!
     @IBOutlet weak var bottomTimerImage: UIImageView!
     
     @IBOutlet weak var restartBottom: UIButton!
     @IBOutlet weak var restartTop: UIButton!
     
+    @IBOutlet weak var infoLabel: UILabel!
+    
     var imageYPosition = 0.0
     var readyCounter = 0
     var restartCounter = 0
     var countdownTimer: Timer!
     var totalTime = 3
+    
+    var clickCounter = 1
+    var totalDistance = 25
+    var timerCounter = -3.0
+    var timer = Timer()
+    var timerIsOn = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +59,7 @@ class ViewController: UIViewController {
         bottomTimerImage.image = UIImage(named: String(totalTime))
         topTimerImage.isHidden = true
         bottomTimerImage.isHidden = true
+        self.infoLabel.font = UIFont(name: "Wizards' Magic", size: 40)
         
         self.circle.center = view.center
     }
@@ -55,6 +68,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     @IBAction func ready(_ sender: Any) {
         readyCounter += 1
@@ -80,12 +94,15 @@ class ViewController: UIViewController {
         topTimerImage.isHidden = false
         bottomTimerImage.isHidden = false
         startTimer()
+        startStatisticsTimer()
     }
     
     @IBAction func moveToBottom(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
             if (self.imageYPosition < Double(UIScreen.main.bounds.height) - Double(self.bottomMage.bounds.height)) {
                 self.circle.center.y += 25
+                self.clickCounter += 1
+                self.totalDistance += 25
                 self.imageYPosition = Double(self.circle.center.y)
                 print(self.imageYPosition)
             } else {
@@ -96,6 +113,7 @@ class ViewController: UIViewController {
                 self.circle.isHidden = true
                 self.restartBottom.isHidden = false
                 self.restartTop.isHidden = false
+                self.randomInfo()
             }
         }, completion: nil)
     }
@@ -104,6 +122,8 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
             if (self.imageYPosition > Double(self.topMage.bounds.height)) {
                 self.circle.center.y -= 25
+                self.clickCounter += 1
+                self.totalDistance += 25
                 self.imageYPosition = Double(self.circle.center.y)
                 print(self.imageYPosition)
             } else {
@@ -114,26 +134,32 @@ class ViewController: UIViewController {
                 self.circle.isHidden = true
                 self.restartBottom.isHidden = false
                 self.restartTop.isHidden = false
+                self.randomInfo()
             }
         }, completion: nil)
     }
-   
+    
     @IBAction func restartBottomButton(_ sender: Any) {
         restartCounter += 1
         self.restartBottom.isHidden = true
         self.readyBottomPressed.isHidden = false
-            if restartCounter % 2 == 0 {
+        resetStatisticsTimer()
+        if restartCounter % 2 == 0 {
             self.restart()
+            self.clickCounter = 1
+            self.totalDistance = 25
         }
     }
-
     
     @IBAction func restarttopF(_ sender: Any) {
         restartCounter += 1
         self.restartTop.isHidden = true
         self.readyTopPressed.isHidden = false
+        resetStatisticsTimer()
         if restartCounter % 2 == 0 {
             self.restart()
+            self.clickCounter = 1
+            self.totalDistance = 25
         }
     }
     
@@ -145,6 +171,8 @@ class ViewController: UIViewController {
         topTimerImage.isHidden = false
         bottomTimerImage.isHidden = false
         startTimer()
+        startStatisticsTimer()
+        infoLabel.isHidden = true
     }
     
     func startTimer() {
@@ -179,5 +207,64 @@ class ViewController: UIViewController {
             endTimer()
         }
     }
+    
+    func randomInfo () {
+        let randomNumber = arc4random_uniform(4)
+        infoLabel.isHidden = false
+        switch randomNumber {
+        case 1:
+           self.infoLabel.text = "total \(self.clickCounter) clicks were made."
+        case 2:
+            let formatedTime = String(format: "%.1f", self.timerCounter)
+            self.infoLabel.text = "mage fight continued for \(formatedTime) human seconds."
+        case 3:
+            self.infoLabel.text = "total distance is \(self.totalDistance) km."
+        default:
+            self.infoLabel.text = "you're beautiful moma's little mage."
+        }
+    }
+    
+    func startStatisticsTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateStatisticsTimer), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateStatisticsTimer() {
+        timerCounter += 0.1
+    }
+    
+    func resetStatisticsTimer(){
+        timer.invalidate()
+        timerCounter = -3.0
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    var layer: CALayer {
+//        return topLayer.layer
+//    }
+
+//    func setUpLayer() {
+//        layer.backgroundColor = UIColor.white.cgColor.copy(alpha: 0)
+//        layer.borderWidth = 1.0
+//        layer.borderColor = UIColor.red.cgColor
+//        layer.shadowOpacity = 0.7
+//        layer.shadowRadius = 10.0
+//        layer.contents = UIImage(named: "go!")?.cgImage
+//    }
+
 

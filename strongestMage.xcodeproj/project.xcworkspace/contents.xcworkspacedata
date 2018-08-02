@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/dmytriiilchuk/Documents/strongestMageGame/strongestMage.xcodeproj">
+      location = "group:../font/DJB Im No Wizard.ttf">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
