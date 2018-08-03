@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		67EFB90D211248DA0094F7F7 /* Wizards' Magic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67EFB90C211248DA0094F7F7 /* Wizards' Magic.ttf */; };
+		67C796012114B59800F751A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882582E020BED6240005969D /* Info.plist */; };
+		67C796042114BAF200F751A6 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 67329DCD2114AFFF004CA35E /* fonts */; };
+		67C796052114BB2F00F751A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882582E020BED6240005969D /* Info.plist */; };
+		67C796062114BB3400F751A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882582E020BED6240005969D /* Info.plist */; };
 		882582D520BED6220005969D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582D420BED6220005969D /* AppDelegate.swift */; };
 		882582D720BED6220005969D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582D620BED6220005969D /* ViewController.swift */; };
 		882582DA20BED6220005969D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882582D820BED6220005969D /* Main.storyboard */; };
@@ -35,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		67EFB90C211248DA0094F7F7 /* Wizards' Magic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Wizards' Magic.ttf"; path = "../../../Downloads/wizards_magic/Wizards' Magic.ttf"; sourceTree = "<group>"; };
+		67329DCD2114AFFF004CA35E /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../../Downloads/fonts; sourceTree = "<group>"; };
 		882582D120BED6220005969D /* strongestMage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = strongestMage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882582D420BED6220005969D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882582D620BED6220005969D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +108,7 @@
 				882582D820BED6220005969D /* Main.storyboard */,
 				882582DD20BED6240005969D /* LaunchScreen.storyboard */,
 				882582E020BED6240005969D /* Info.plist */,
-				67EFB90C211248DA0094F7F7 /* Wizards' Magic.ttf */,
+				67329DCD2114AFFF004CA35E /* fonts */,
 			);
 			path = strongestMage;
 			sourceTree = "<group>";
@@ -232,10 +235,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67C796042114BAF200F751A6 /* fonts in Resources */,
 				882582DF20BED6240005969D /* LaunchScreen.storyboard in Resources */,
 				885B229B20BF47BD009AEFA5 /* Assets.xcassets in Resources */,
-				67EFB90D211248DA0094F7F7 /* Wizards' Magic.ttf in Resources */,
 				882582DA20BED6220005969D /* Main.storyboard in Resources */,
+				67C796012114B59800F751A6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67C796052114BB2F00F751A6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67C796062114BB3400F751A6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -60,7 +60,12 @@ class ViewController: UIViewController {
         bottomTimerImage.image = UIImage(named: String(totalTime))
         topTimerImage.isHidden = true
         bottomTimerImage.isHidden = true
-        self.infoLabel.font = UIFont(name: "Wizards' Magic", size: 40)
+        
+        
+        infoLabel.font = UIFont.init(name: "octin vintage b rg", size: 50)
+        let attribute = [NSAttributedStringKey.font: infoLabel.font!]
+        NSMutableAttributedString(string: infoLabel.text!, attributes: attribute)
+        infoLabel?.text = "hello"
         
         self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
     }
@@ -214,7 +219,7 @@ class ViewController: UIViewController {
         infoLabel.isHidden = false
         switch randomNumber {
         case 1:
-           self.infoLabel.text = "total \(self.clickCounter) clicks were made."
+            self.infoLabel.text = "total \(self.clickCounter) clicks were made."
         case 2:
             let formatedTime = String(format: "%.1f", self.timerCounter)
             self.infoLabel.text = "mage fight continued for \(formatedTime) human seconds."
@@ -222,6 +227,7 @@ class ViewController: UIViewController {
             self.infoLabel.text = "total distance is \(self.totalDistance) km."
         default:
             self.infoLabel.text = "you're beautiful moma's little mage."
+            
         }
     }
     
@@ -238,34 +244,5 @@ class ViewController: UIViewController {
         timerCounter = -3.0
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    var layer: CALayer {
-//        return topLayer.layer
-//    }
-
-//    func setUpLayer() {
-//        layer.backgroundColor = UIColor.white.cgColor.copy(alpha: 0)
-//        layer.borderWidth = 1.0
-//        layer.borderColor = UIColor.red.cgColor
-//        layer.shadowOpacity = 0.7
-//        layer.shadowRadius = 10.0
-//        layer.contents = UIImage(named: "go!")?.cgImage
-//    }
 
 
