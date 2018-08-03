@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var topTimerImage: UIImageView!
     @IBOutlet weak var bottomTimerImage: UIImageView!
+    @IBOutlet weak var raySubview: UIView!
     
     @IBOutlet weak var restartBottom: UIButton!
     @IBOutlet weak var restartTop: UIButton!
@@ -61,7 +62,7 @@ class ViewController: UIViewController {
         bottomTimerImage.isHidden = true
         self.infoLabel.font = UIFont(name: "Wizards' Magic", size: 40)
         
-        self.circle.center = view.center
+        self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
     }
     
     override func didReceiveMemoryWarning() {
@@ -89,7 +90,7 @@ class ViewController: UIViewController {
     }
     
     func readyF() {
-        self.circle.center = view.center
+        self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
         imageYPosition = Double(self.circle.center.y)
         topTimerImage.isHidden = false
         bottomTimerImage.isHidden = false
@@ -99,7 +100,7 @@ class ViewController: UIViewController {
     
     @IBAction func moveToBottom(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
-            if (self.imageYPosition < Double(UIScreen.main.bounds.height) - Double(self.bottomMage.bounds.height)) {
+            if (self.imageYPosition < Double(self.raySubview.bounds.height)) {
                 self.circle.center.y += 25
                 self.clickCounter += 1
                 self.totalDistance += 25
@@ -120,7 +121,7 @@ class ViewController: UIViewController {
     
     @IBAction func moveToTop(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
-            if (self.imageYPosition > Double(self.topMage.bounds.height)) {
+            if (self.imageYPosition > 0) {
                 self.circle.center.y -= 25
                 self.clickCounter += 1
                 self.totalDistance += 25
@@ -164,7 +165,7 @@ class ViewController: UIViewController {
     }
     
     func restart() {
-        self.circle.center = view.center
+        self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
         imageYPosition = Double(self.circle.center.y)
         bottomMageWon.isHidden = true
         topMageWon.isHidden = true
