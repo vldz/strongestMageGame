@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		67C796012114B59800F751A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882582E020BED6240005969D /* Info.plist */; };
-		67C796042114BAF200F751A6 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 67329DCD2114AFFF004CA35E /* fonts */; };
 		67C796052114BB2F00F751A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882582E020BED6240005969D /* Info.plist */; };
 		67C796062114BB3400F751A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882582E020BED6240005969D /* Info.plist */; };
+		67C796082116F35C00F751A6 /* Wizards' Magic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67C796072116F35C00F751A6 /* Wizards' Magic.ttf */; };
+		67C7960A2116F37200F751A6 /* wizzta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67C796092116F37200F751A6 /* wizzta.ttf */; };
+		67C7960C211767B400F751A6 /* DJB I Love a Ginger.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67C7960B211767B300F751A6 /* DJB I Love a Ginger.ttf */; };
 		882582D520BED6220005969D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582D420BED6220005969D /* AppDelegate.swift */; };
 		882582D720BED6220005969D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582D620BED6220005969D /* ViewController.swift */; };
 		882582DA20BED6220005969D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882582D820BED6220005969D /* Main.storyboard */; };
@@ -18,6 +20,7 @@
 		882582EA20BED6250005969D /* strongest_mageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582E920BED6250005969D /* strongest_mageTests.swift */; };
 		882582F520BED6250005969D /* strongest_mageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582F420BED6250005969D /* strongest_mageUITests.swift */; };
 		885B229B20BF47BD009AEFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885B229A20BF47BD009AEFA5 /* Assets.xcassets */; };
+		D57BF0E621168B5100AD4E89 /* octin vintage b rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D57BF0E521168B5100AD4E89 /* octin vintage b rg.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		67329DCD2114AFFF004CA35E /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../../Downloads/fonts; sourceTree = "<group>"; };
+		67C796072116F35C00F751A6 /* Wizards' Magic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wizards' Magic.ttf"; sourceTree = "<group>"; };
+		67C796092116F37200F751A6 /* wizzta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wizzta.ttf; sourceTree = "<group>"; };
+		67C7960B211767B300F751A6 /* DJB I Love a Ginger.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DJB I Love a Ginger.ttf"; sourceTree = "<group>"; };
 		882582D120BED6220005969D /* strongestMage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = strongestMage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882582D420BED6220005969D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882582D620BED6220005969D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		882582F420BED6250005969D /* strongest_mageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strongest_mageUITests.swift; sourceTree = "<group>"; };
 		882582F620BED6250005969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885B229A20BF47BD009AEFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D57BF0E521168B5100AD4E89 /* octin vintage b rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "octin vintage b rg.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,7 @@
 				882582D820BED6220005969D /* Main.storyboard */,
 				882582DD20BED6240005969D /* LaunchScreen.storyboard */,
 				882582E020BED6240005969D /* Info.plist */,
-				67329DCD2114AFFF004CA35E /* fonts */,
+				D57BF0E721168BFB00AD4E89 /* fonts */,
 			);
 			path = strongestMage;
 			sourceTree = "<group>";
@@ -129,6 +135,17 @@
 				882582F620BED6250005969D /* Info.plist */,
 			);
 			path = strongestMageUITests;
+			sourceTree = "<group>";
+		};
+		D57BF0E721168BFB00AD4E89 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				67C7960B211767B300F751A6 /* DJB I Love a Ginger.ttf */,
+				67C796072116F35C00F751A6 /* Wizards' Magic.ttf */,
+				67C796092116F37200F751A6 /* wizzta.ttf */,
+				D57BF0E521168B5100AD4E89 /* octin vintage b rg.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,11 +252,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C796042114BAF200F751A6 /* fonts in Resources */,
+				67C7960A2116F37200F751A6 /* wizzta.ttf in Resources */,
 				882582DF20BED6240005969D /* LaunchScreen.storyboard in Resources */,
 				885B229B20BF47BD009AEFA5 /* Assets.xcassets in Resources */,
+				67C796082116F35C00F751A6 /* Wizards' Magic.ttf in Resources */,
 				882582DA20BED6220005969D /* Main.storyboard in Resources */,
 				67C796012114B59800F751A6 /* Info.plist in Resources */,
+				D57BF0E621168B5100AD4E89 /* octin vintage b rg.ttf in Resources */,
+				67C7960C211767B400F751A6 /* DJB I Love a Ginger.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
