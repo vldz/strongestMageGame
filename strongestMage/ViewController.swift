@@ -61,10 +61,6 @@ class ViewController: UIViewController {
         topTimerImage.isHidden = true
         bottomTimerImage.isHidden = true
         
-        
-        infoLabel.font = UIFont.init(name: "octin vintage b rg", size: 50)
-        let attribute = [NSAttributedStringKey.font: infoLabel.font!]
-        NSMutableAttributedString(string: infoLabel.text!, attributes: attribute)
         infoLabel?.text = "hello"
         
         self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
