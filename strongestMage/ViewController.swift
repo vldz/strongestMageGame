@@ -15,26 +15,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var circle: UIImageView!
     @IBOutlet weak var topMage: UIButton!
     @IBOutlet weak var bottomMage: UIButton!
-    
-    @IBOutlet weak var bottomMageWon: UIImageView!
-    @IBOutlet weak var topMageWon: UIImageView!
-    
+
     @IBOutlet weak var readyButton: UIButton!
     @IBOutlet weak var readyTop: UIButton!
-    @IBOutlet weak var readyTopPressed: UIImageView!
-    @IBOutlet weak var readyBottomPressed: UIImageView!
     
     @IBOutlet weak var topTimerImage: UIImageView!
     @IBOutlet weak var bottomTimerImage: UIImageView!
     @IBOutlet weak var raySubview: UIView!
     
+    @IBOutlet weak var InfoForTopMage: UILabel!
+    @IBOutlet weak var InfoForBottomMage: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
+    
     @IBOutlet weak var restartBottom: UIButton!
     @IBOutlet weak var restartTop: UIButton!
     
-    @IBOutlet weak var infoLabel: UILabel!
-    
     var imageYPosition = 0.0
-    var readyCounter = 0
+    
+    var isReadyTop = false
+    var isReadyBottom = false
+    var isReadyToRestartTop = false
+    var isReadyToRestartBottom = false
+    
     var restartCounter = 0
     var countdownTimer: Timer!
     var totalTime = 3
@@ -51,9 +53,8 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.black
         
         topMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        topMageWon.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        InfoForTopMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         readyTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        readyTopPressed.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         restartTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         topTimerImage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         topTimerImage.image = UIImage(named: String(totalTime))
@@ -61,13 +62,11 @@ class ViewController: UIViewController {
         topTimerImage.isHidden = true
         bottomTimerImage.isHidden = true
         
-        
-//        infoLabel.font = UIFont.init(name: "octin vintage b rg", size: 50)
-//        let attribute = [NSAttributedStringKey.font: infoLabel.font!]
-//        NSMutableAttributedString(string: infoLabel.text!, attributes: attribute)
-//        infoLabel?.text = "hello"
-        
         self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     override func didReceiveMemoryWarning() {
@@ -77,19 +76,19 @@ class ViewController: UIViewController {
     
     
     @IBAction func ready(_ sender: Any) {
-        readyCounter += 1
-        readyButton.isHidden = true
-        readyBottomPressed.isHidden = false
-        if readyCounter % 2 == 0 {
+        isReadyBottom = true
+        readyButton.setTitle("ready!", for: .normal)
+        readyButton.isEnabled = false
+        if isReadyBottom && isReadyTop {
             self.readyF()
         }
     }
     
     @IBAction func readyTop(_ sender: Any) {
-        readyCounter += 1
-        readyTop.isHidden = true
-        readyTopPressed.isHidden = false
-        if readyCounter % 2 == 0 {
+        isReadyTop = true
+        readyTop.setTitle("ready!", for: .normal)
+        readyTop.isEnabled = false
+        if isReadyTop && isReadyBottom {
             self.readyF()
         }
     }
@@ -99,6 +98,8 @@ class ViewController: UIViewController {
         imageYPosition = Double(self.circle.center.y)
         topTimerImage.isHidden = false
         bottomTimerImage.isHidden = false
+        readyButton.isHidden = true
+        readyTop.isHidden = true
         startTimer()
         startStatisticsTimer()
     }
@@ -112,8 +113,7 @@ class ViewController: UIViewController {
                 self.imageYPosition = Double(self.circle.center.y)
                 print(self.imageYPosition)
             } else {
-                self.topMageWon.isHidden = false
-                self.bottomMageWon.isHidden = true
+                self.winLose(decider: 2)
                 self.topMage.isEnabled = false
                 self.bottomMage.isEnabled = false
                 self.circle.isHidden = true
@@ -133,8 +133,7 @@ class ViewController: UIViewController {
                 self.imageYPosition = Double(self.circle.center.y)
                 print(self.imageYPosition)
             } else {
-                self.bottomMageWon.isHidden = false
-                self.topMageWon.isHidden = true
+                self.winLose(decider: 1)
                 self.topMage.isEnabled = false
                 self.bottomMage.isEnabled = false
                 self.circle.isHidden = true
@@ -146,11 +145,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func restartBottomButton(_ sender: Any) {
-        restartCounter += 1
-        self.restartBottom.isHidden = true
-        self.readyBottomPressed.isHidden = false
+        isReadyToRestartBottom = true
+        self.restartBottom.setTitle("ready!", for: .normal)
         resetStatisticsTimer()
-        if restartCounter % 2 == 0 {
+        if isReadyToRestartBottom && isReadyToRestartTop {
             self.restart()
             self.clickCounter = 1
             self.totalDistance = 25
@@ -158,11 +156,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func restarttopF(_ sender: Any) {
-        restartCounter += 1
-        self.restartTop.isHidden = true
-        self.readyTopPressed.isHidden = false
+        isReadyToRestartTop = true
+        self.restartTop.setTitle("ready!", for: .normal)
         resetStatisticsTimer()
-        if restartCounter % 2 == 0 {
+        if isReadyToRestartBottom && isReadyToRestartTop {
             self.restart()
             self.clickCounter = 1
             self.totalDistance = 25
@@ -172,13 +169,22 @@ class ViewController: UIViewController {
     func restart() {
         self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
         imageYPosition = Double(self.circle.center.y)
-        bottomMageWon.isHidden = true
-        topMageWon.isHidden = true
+        
+        InfoForTopMage.isHidden = true
+        InfoForBottomMage.isHidden = true
+        infoLabel.isHidden = true
+        
+        restartTop.isHidden = true
+        restartTop.setTitle("restart?", for: .normal)
+        restartBottom.isHidden = true
+        restartBottom.setTitle("restart?", for: .normal)
+        isReadyToRestartBottom = false
+        isReadyToRestartTop = false
+        
         topTimerImage.isHidden = false
         bottomTimerImage.isHidden = false
         startTimer()
         startStatisticsTimer()
-        infoLabel.isHidden = true
     }
     
     func startTimer() {
@@ -192,9 +198,6 @@ class ViewController: UIViewController {
         topMage.isEnabled = true
         bottomMage.isEnabled = true
         circle.isHidden = false
-        readyTopPressed.isHidden = true
-        readyBottomPressed.isHidden = true
-        readyCounter = 0
         totalTime = 3
         topTimerImage.image = UIImage(named: String(totalTime))
         bottomTimerImage.image = UIImage(named: String(totalTime))
@@ -218,7 +221,7 @@ class ViewController: UIViewController {
         let randomNumber = arc4random_uniform(4)
         infoLabel.isHidden = false
         switch randomNumber {
-        case 1:
+        case randomNumber:
             self.infoLabel.text = "total \(self.clickCounter) clicks were made."
         case 2:
             let formatedTime = String(format: "%.1f", self.timerCounter)
@@ -242,6 +245,51 @@ class ViewController: UIViewController {
     func resetStatisticsTimer(){
         timer.invalidate()
         timerCounter = -3.0
+    }
+    
+    func winLose(decider: Int) {
+        InfoForTopMage.isHidden = false
+        InfoForBottomMage.isHidden = false
+            if decider == 1 {
+                InfoForTopMage.text = loseFrasesGenerator()
+                InfoForBottomMage.text = winFrasesGenerator()
+            }
+            if decider == 2 {
+                InfoForTopMage.text = winFrasesGenerator()
+                InfoForBottomMage.text = loseFrasesGenerator()
+            }
+    }
+    
+    func winFrasesGenerator() -> String {
+        let randomNumberForWinFrases = arc4random_uniform(5)
+        switch randomNumberForWinFrases {
+        case 1:
+            return "you are the best!"
+        case 2:
+            return "strongest mage."
+        case 3:
+            return "amazing skill."
+        case 4:
+            return "domination!"
+        default:
+            return "winner winner."
+        }
+    }
+    
+    func loseFrasesGenerator() -> String {
+        let randomNumberForLoseFrases = arc4random_uniform(5)
+        switch randomNumberForLoseFrases {
+        case 1:
+            return "you are soo bad!"
+        case 2:
+            return "weakest mage."
+        case 3:
+            return "noone loves you."
+        case 4:
+            return "weaked sick."
+        default:
+            return "chicken chicken."
+        }
     }
 }
 
