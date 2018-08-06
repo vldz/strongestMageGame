@@ -111,6 +111,7 @@
 				885B229A20BF47BD009AEFA5 /* Assets.xcassets */,
 				882582D420BED6220005969D /* AppDelegate.swift */,
 				882582D620BED6220005969D /* ViewController.swift */,
+				D57BF0E721168BFB00AD4E89 /* fonts */,
 				882582D820BED6220005969D /* Main.storyboard */,
 				882582DD20BED6240005969D /* LaunchScreen.storyboard */,
 				882582E020BED6240005969D /* Info.plist */,

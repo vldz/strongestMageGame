@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         bottomTimerImage.image = UIImage(named: String(totalTime))
         topTimerImage.isHidden = true
         bottomTimerImage.isHidden = true
-        
+
         self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
     }
     
