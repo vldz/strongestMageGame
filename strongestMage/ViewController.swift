@@ -23,8 +23,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var readyButton: UIButton!
     @IBOutlet weak var readyTop: UIButton!
     
-    @IBOutlet weak var topTimerImage: UIImageView!
-    @IBOutlet weak var bottomTimerImage: UIImageView!
     @IBOutlet weak var raySubview: UIView!
     
     @IBOutlet weak var InfoForTopMage: UILabel!
@@ -58,10 +56,9 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.black
         buttonTransformUpSideDown()
         
-        topTimerImage.image = UIImage(named: String(totalTime))
-        bottomTimerImage.image = UIImage(named: String(totalTime))
+        updateTimerInfo()
 
-        self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
+        self.circle.center = CGPoint(x:raySubview.frame.width / 2, y:raySubview.frame.height / 2)
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,7 +71,6 @@ class ViewController: UIViewController {
         InfoForTopMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         readyTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         restartTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        topTimerImage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
     }
     
     @IBAction func ready(_ sender: Any) {
@@ -98,8 +94,8 @@ class ViewController: UIViewController {
     func readyF() {
         self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
         imageYPosition = Double(self.circle.center.y)
-        topTimerImage.isHidden = false
-        bottomTimerImage.isHidden = false
+        InfoForTopMage.isHidden = false
+        InfoForBottomMage.isHidden = false
         readyButton.isHidden = true
         readyTop.isHidden = true
         startTimer()
@@ -172,8 +168,6 @@ class ViewController: UIViewController {
         self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
         imageYPosition = Double(self.circle.center.y)
         
-        InfoForTopMage.isHidden = true
-        InfoForBottomMage.isHidden = true
         infoLabel.isHidden = true
         
         restartTop.isHidden = true
@@ -183,8 +177,9 @@ class ViewController: UIViewController {
         isReadyToRestartBottom = false
         isReadyToRestartTop = false
         
-        topTimerImage.isHidden = false
-        bottomTimerImage.isHidden = false
+        InfoForTopMage.isHidden = false
+        InfoForBottomMage.isHidden = false
+        updateTimerInfo()
         startTimer()
         startStatisticsTimer()
     }
@@ -195,28 +190,31 @@ class ViewController: UIViewController {
     
     func endTimer() {
         countdownTimer.invalidate()
-        topTimerImage.isHidden = true
-        bottomTimerImage.isHidden = true
+        InfoForTopMage.isHidden = true
+        InfoForBottomMage.isHidden = true
         topMage.isEnabled = true
         bottomMage.isEnabled = true
         circle.isHidden = false
         totalTime = 3
-        topTimerImage.image = UIImage(named: String(totalTime))
-        bottomTimerImage.image = UIImage(named: String(totalTime))
+        updateTimerInfo()
     }
     
     @objc
     func updateTime() {
         totalTime -= 1
         if totalTime > 0 {
-            topTimerImage.image = UIImage(named: String(totalTime))
-            bottomTimerImage.image = UIImage(named: String(totalTime))
+            updateTimerInfo()
         } else if totalTime == 0 {
-            topTimerImage.image = UIImage(named: "go!")
-            bottomTimerImage.image = UIImage(named: "go!")
+            InfoForTopMage.text = "go!"
+            InfoForBottomMage.text = "go!"
         } else {
             endTimer()
         }
+    }
+    
+    func updateTimerInfo() {
+        InfoForTopMage.text = String(totalTime)
+        InfoForBottomMage.text = String(totalTime)
     }
     
     func randomInfo () {
