@@ -121,7 +121,7 @@
                                 </constraints>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTc-cA-nRD">
-                                <rect key="frame" x="172" y="312.5" width="31.5" height="44"/>
+                                <rect key="frame" x="172" y="311.5" width="31.5" height="44"/>
                                 <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.38069436564695192" blue="0.58851368997293796" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -221,7 +221,6 @@
                         <outlet property="InfoForBottomMage" destination="YMH-VG-eW2" id="M1W-Vq-PKJ"/>
                         <outlet property="InfoForTopMage" destination="bCF-sw-m0F" id="643-0D-waG"/>
                         <outlet property="bottomMage" destination="nY1-rO-FEf" id="74T-y9-Ef4"/>
-                        <outlet property="bottomTimerImage" destination="YL0-zs-sN9" id="qQy-L0-oRz"/>
                         <outlet property="circle" destination="w7Y-Xq-qvp" id="Os5-ta-BfH"/>
                         <outlet property="infoLabel" destination="eTc-cA-nRD" id="3bc-aP-8g8"/>
                         <outlet property="raySubview" destination="DL5-c6-rS2" id="CSy-fS-DVw"/>
@@ -230,7 +229,6 @@
                         <outlet property="restartBottom" destination="DQ8-Io-jhL" id="7hd-iX-1dz"/>
                         <outlet property="restartTop" destination="dhu-Ux-x1y" id="COq-cj-hvH"/>
                         <outlet property="topMage" destination="ODf-kR-1wI" id="zDq-Vw-Wmr"/>
-                        <outlet property="topTimerImage" destination="2v5-2k-VTM" id="7kQ-DU-9pc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
