@@ -12,6 +12,10 @@ import Foundation
 
 class ViewController: UIViewController {
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     @IBOutlet weak var circle: UIImageView!
     @IBOutlet weak var topMage: UIButton!
     @IBOutlet weak var bottomMage: UIButton!
@@ -50,23 +54,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       
         view.backgroundColor = UIColor.black
+        buttonTransformUpSideDown()
         
-        topMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        InfoForTopMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        readyTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        restartTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        topTimerImage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         topTimerImage.image = UIImage(named: String(totalTime))
         bottomTimerImage.image = UIImage(named: String(totalTime))
-        topTimerImage.isHidden = true
-        bottomTimerImage.isHidden = true
 
         self.circle.center = CGPoint(x:raySubview.frame.width/2, y:raySubview.frame.height/2)
-    }
-    
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,6 +69,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func buttonTransformUpSideDown() {
+        topMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        InfoForTopMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        readyTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        restartTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        topTimerImage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+    }
     
     @IBAction func ready(_ sender: Any) {
         isReadyBottom = true
@@ -218,10 +220,10 @@ class ViewController: UIViewController {
     }
     
     func randomInfo () {
-        let randomNumber = arc4random_uniform(4)
+        let randomNumber = arc4random_uniform(3)
         infoLabel.isHidden = false
         switch randomNumber {
-        case randomNumber:
+        case 1:
             self.infoLabel.text = "total \(self.clickCounter) clicks were made."
         case 2:
             let formatedTime = String(format: "%.1f", self.timerCounter)
@@ -229,7 +231,7 @@ class ViewController: UIViewController {
         case 3:
             self.infoLabel.text = "total distance is \(self.totalDistance) km."
         default:
-            self.infoLabel.text = "you're beautiful moma's little mage."
+            self.infoLabel.text = "so what?"
             
         }
     }
@@ -251,18 +253,18 @@ class ViewController: UIViewController {
         InfoForTopMage.isHidden = false
         InfoForBottomMage.isHidden = false
             if decider == 1 {
-                InfoForTopMage.text = loseFrasesGenerator()
-                InfoForBottomMage.text = winFrasesGenerator()
+                InfoForTopMage.text = losePhrasesGenerator()
+                InfoForBottomMage.text = winPhrasesGenerator()
             }
             if decider == 2 {
-                InfoForTopMage.text = winFrasesGenerator()
-                InfoForBottomMage.text = loseFrasesGenerator()
+                InfoForTopMage.text = winPhrasesGenerator()
+                InfoForBottomMage.text = losePhrasesGenerator()
             }
     }
     
-    func winFrasesGenerator() -> String {
-        let randomNumberForWinFrases = arc4random_uniform(5)
-        switch randomNumberForWinFrases {
+    func winPhrasesGenerator() -> String {
+        let randomNumberForWinPhrases = arc4random_uniform(5)
+        switch randomNumberForWinPhrases {
         case 1:
             return "you are the best!"
         case 2:
@@ -276,9 +278,9 @@ class ViewController: UIViewController {
         }
     }
     
-    func loseFrasesGenerator() -> String {
-        let randomNumberForLoseFrases = arc4random_uniform(5)
-        switch randomNumberForLoseFrases {
+    func losePhrasesGenerator() -> String {
+        let randomNumberForLosePhrases = arc4random_uniform(6)
+        switch randomNumberForLosePhrases {
         case 1:
             return "you are soo bad!"
         case 2:
@@ -287,6 +289,8 @@ class ViewController: UIViewController {
             return "noone loves you."
         case 4:
             return "weaked sick."
+        case 5:
+            return "pussy."
         default:
             return "chicken chicken."
         }
