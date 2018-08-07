@@ -106,14 +106,14 @@
                                     <action selector="restartBottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fs-3Z-Jms"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2v5-2k-VTM">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2v5-2k-VTM">
                                 <rect key="frame" x="114" y="267" width="147" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="147" id="1E4-7N-vyh"/>
                                     <constraint firstAttribute="height" constant="51" id="l8m-mH-Esu"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YL0-zs-sN9">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YL0-zs-sN9">
                                 <rect key="frame" x="114" y="351" width="147" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="Aw9-iP-Gqw"/>
@@ -133,7 +133,7 @@
                                     <constraint firstAttribute="height" constant="66" id="caJ-kW-Cv3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="19"/>
-                                <color key="textColor" red="0.90766524264055393" green="1" blue="0.34534444604010694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.81996125190000002" green="1" blue="0.3973975481" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMH-VG-eW2">
