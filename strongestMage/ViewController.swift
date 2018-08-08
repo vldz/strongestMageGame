@@ -103,7 +103,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func moveToBottom(_ sender: Any) {
-        UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
             if (self.imageYPosition < Double(self.raySubview.bounds.height)) {
                 self.circle.center.y += 25
                 self.clickCounter += 1
@@ -123,7 +123,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func moveToTop(_ sender: Any) {
-        UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
             if (self.imageYPosition > 0) {
                 self.circle.center.y -= 25
                 self.clickCounter += 1
