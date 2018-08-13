@@ -38,8 +38,8 @@ class ViewController: UIViewController {
     var isReadyBottom = false
     var isReadyToRestartTop = false
     var isReadyToRestartBottom = false
+    var isFirstRound = true
     
-    var restartCounter = 0
     var countdownTimer: Timer!
     var totalTime = 3
     
@@ -70,15 +70,25 @@ class ViewController: UIViewController {
         topMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         InfoForTopMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         readyTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        restartTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
     }
     
     @IBAction func ready(_ sender: Any) {
         isReadyBottom = true
         readyButton.setTitle("ready!", for: .normal)
         readyButton.isEnabled = false
-        if isReadyBottom && isReadyTop {
-            self.readyF()
+        if isFirstRound {
+            if isReadyBottom && isReadyTop {
+                self.readyF()
+            }
+        } else {
+            isReadyToRestartBottom = true
+            self.readyButton.setTitle("ready!", for: .normal)
+            resetStatisticsTimer()
+            if isReadyToRestartBottom && isReadyToRestartTop {
+                self.restart()
+                self.clickCounter = 1
+                self.totalDistance = 25
+            }
         }
     }
     
@@ -86,8 +96,19 @@ class ViewController: UIViewController {
         isReadyTop = true
         readyTop.setTitle("ready!", for: .normal)
         readyTop.isEnabled = false
-        if isReadyTop && isReadyBottom {
-            self.readyF()
+        if isFirstRound {
+            if isReadyTop && isReadyBottom{
+                self.readyF()
+            }
+        } else {
+            isReadyToRestartTop = true
+            self.readyTop.setTitle("ready!", for: .normal)
+            resetStatisticsTimer()
+            if isReadyToRestartBottom && isReadyToRestartTop {
+                self.restart()
+                self.clickCounter = 1
+                self.totalDistance = 25
+            }
         }
     }
     
@@ -100,10 +121,15 @@ class ViewController: UIViewController {
         readyTop.isHidden = true
         startTimer()
         startStatisticsTimer()
+        isFirstRound = false
+        readyButton.setTitleColor(UIColor(red:0.00, green:1.00, blue:0.82, alpha:1.0), for: .normal)
+        readyButton.setTitle("restart?", for: .normal)
+        readyTop.setTitleColor(UIColor(red:0.00, green:1.00, blue:0.82, alpha:1.0), for: .normal)
+        readyTop.setTitle("restart?", for: .normal)
     }
     
     @IBAction func moveToBottom(_ sender: Any) {
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveLinear, animations: {
             if (self.imageYPosition < Double(self.raySubview.bounds.height)) {
                 self.circle.center.y += 25
                 self.clickCounter += 1
@@ -115,15 +141,17 @@ class ViewController: UIViewController {
                 self.topMage.isEnabled = false
                 self.bottomMage.isEnabled = false
                 self.circle.isHidden = true
-                self.restartBottom.isHidden = false
-                self.restartTop.isHidden = false
                 self.randomInfo()
+                self.readyTop.isHidden = false
+                self.readyButton.isHidden = false
+                self.readyButton.isEnabled = true
+                self.readyTop.isEnabled = true
             }
         }, completion: nil)
     }
     
     @IBAction func moveToTop(_ sender: Any) {
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveLinear, animations: {
             if (self.imageYPosition > 0) {
                 self.circle.center.y -= 25
                 self.clickCounter += 1
@@ -135,33 +163,13 @@ class ViewController: UIViewController {
                 self.topMage.isEnabled = false
                 self.bottomMage.isEnabled = false
                 self.circle.isHidden = true
-                self.restartBottom.isHidden = false
-                self.restartTop.isHidden = false
                 self.randomInfo()
+                self.readyTop.isHidden = false
+                self.readyButton.isHidden = false
+                self.readyButton.isEnabled = true
+                self.readyTop.isEnabled = true
             }
         }, completion: nil)
-    }
-    
-    @IBAction func restartBottomButton(_ sender: Any) {
-        isReadyToRestartBottom = true
-        self.restartBottom.setTitle("ready!", for: .normal)
-        resetStatisticsTimer()
-        if isReadyToRestartBottom && isReadyToRestartTop {
-            self.restart()
-            self.clickCounter = 1
-            self.totalDistance = 25
-        }
-    }
-    
-    @IBAction func restarttopF(_ sender: Any) {
-        isReadyToRestartTop = true
-        self.restartTop.setTitle("ready!", for: .normal)
-        resetStatisticsTimer()
-        if isReadyToRestartBottom && isReadyToRestartTop {
-            self.restart()
-            self.clickCounter = 1
-            self.totalDistance = 25
-        }
     }
     
     func restart() {
@@ -170,10 +178,10 @@ class ViewController: UIViewController {
         
         infoLabel.isHidden = true
         
-        restartTop.isHidden = true
-        restartTop.setTitle("restart?", for: .normal)
-        restartBottom.isHidden = true
-        restartBottom.setTitle("restart?", for: .normal)
+        readyTop.isHidden = true
+        readyTop.setTitle("restart?", for: .normal)
+        readyButton.isHidden = true
+        readyButton.setTitle("restart?", for: .normal)
         isReadyToRestartBottom = false
         isReadyToRestartTop = false
         
@@ -205,8 +213,9 @@ class ViewController: UIViewController {
         if totalTime > 0 {
             updateTimerInfo()
         } else if totalTime == 0 {
-            InfoForTopMage.text = "go!"
-            InfoForBottomMage.text = "go!"
+            let phrase = startPhrases()
+            InfoForTopMage.text = phrase
+            InfoForBottomMage.text = phrase
         } else {
             endTimer()
         }
@@ -293,6 +302,22 @@ class ViewController: UIViewController {
             return "chicken chicken."
         }
     }
+    
+    func startPhrases() -> String {
+        let randomNumberForStartPhrases = arc4random_uniform(5)
+        switch randomNumberForStartPhrases {
+        case 1:
+            return "alahu akbar."
+        case 2:
+            return "avada kedavra."
+        case 3:
+            return "fokusi-pokusi!"
+        case 4:
+            return "pew? pew!"
+        default:
+            return "go!"
+    }
 }
 
 
+}

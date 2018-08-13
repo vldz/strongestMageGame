@@ -58,24 +58,10 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="20"/>
                                 <state key="normal" title="ready?">
-                                    <color key="titleColor" red="1" green="0.63123998329999997" blue="0.95335584640000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.37516491993129453" blue="0.65182753942346383" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="readyTop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69f-FX-aPj"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhu-Ux-x1y">
-                                <rect key="frame" x="135" y="20" width="105" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="NA6-o5-yHe"/>
-                                    <constraint firstAttribute="width" constant="105" id="RlA-GD-Mc0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="20"/>
-                                <state key="normal" title="restart?">
-                                    <color key="titleColor" red="0.33597102290000003" green="1" blue="0.80873824559999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="restarttopF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CV4-8v-vkV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEk-1T-xLF">
@@ -86,31 +72,16 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="20"/>
                                 <state key="normal" title="ready?">
-                                    <color key="titleColor" red="1" green="0.6312399833277369" blue="0.95335584639127324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.3751649199" blue="0.65182753940000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="ready:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KmY-pN-2VK"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQ8-Io-jhL">
-                                <rect key="frame" x="137" y="616" width="101" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="105" id="1KF-SH-FrO"/>
-                                    <constraint firstAttribute="height" constant="51" id="INI-Hr-yRs"/>
-                                </constraints>
-                                <viewLayoutGuide key="safeArea" id="I1s-xP-bva"/>
-                                <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="20"/>
-                                <state key="normal" title="restart?">
-                                    <color key="titleColor" red="0.33597102287380021" green="1" blue="0.80873824559396046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="restartBottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fs-3Z-Jms"/>
-                                </connections>
-                            </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTc-cA-nRD">
-                                <rect key="frame" x="172.5" y="311.5" width="31" height="44"/>
+                                <rect key="frame" x="172" y="311.5" width="31" height="44"/>
                                 <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.38069436564695192" blue="0.58851368997293796" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.91700623208518695" green="0.58046427712670023" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCF-sw-m0F">
@@ -120,7 +91,7 @@
                                     <constraint firstAttribute="height" constant="66" id="caJ-kW-Cv3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="19"/>
-                                <color key="textColor" red="0.81996125190000002" green="1" blue="0.3973975481" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMH-VG-eW2">
@@ -130,7 +101,7 @@
                                     <constraint firstAttribute="height" constant="66" id="fXI-uO-wOl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="20"/>
-                                <color key="textColor" red="0.90766524260000003" green="1" blue="0.34534444600000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DL5-c6-rS2">
@@ -179,21 +150,16 @@
                             <constraint firstItem="YMH-VG-eW2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HCx-QQ-dpF"/>
                             <constraint firstItem="bCF-sw-m0F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KSp-1A-D6p"/>
                             <constraint firstItem="ODf-kR-1wI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ME0-aQ-crG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DQ8-Io-jhL" secondAttribute="bottom" id="OWs-Qy-CpE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DQ8-Io-jhL" secondAttribute="trailing" constant="137" id="Y4G-pq-j8t"/>
                             <constraint firstItem="bCF-sw-m0F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cuK-bo-6ml"/>
                             <constraint firstItem="YMH-VG-eW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="djO-mR-HH9"/>
                             <constraint firstItem="eTc-cA-nRD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eZl-14-lhd"/>
                             <constraint firstItem="nY1-rO-FEf" firstAttribute="top" secondItem="DL5-c6-rS2" secondAttribute="bottom" constant="-10" id="gko-yI-ngt"/>
                             <constraint firstItem="nY1-rO-FEf" firstAttribute="top" secondItem="YMH-VG-eW2" secondAttribute="bottom" constant="38" id="gkp-xh-Jh3"/>
-                            <constraint firstItem="dhu-Ux-x1y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="i4k-CT-Nxp"/>
-                            <constraint firstItem="DQ8-Io-jhL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="kGn-Rp-zFp"/>
                             <constraint firstItem="bCF-sw-m0F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oeO-O2-OLp"/>
                             <constraint firstItem="DL5-c6-rS2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pAC-M9-tCi"/>
                             <constraint firstItem="YMH-VG-eW2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pxQ-wz-m59"/>
                             <constraint firstItem="DL5-c6-rS2" firstAttribute="top" secondItem="ODf-kR-1wI" secondAttribute="bottom" constant="-20" id="qaa-bK-oCv"/>
                             <constraint firstItem="NEk-1T-xLF" firstAttribute="bottom" secondItem="nY1-rO-FEf" secondAttribute="bottom" constant="35" id="u6Y-A8-Vp2"/>
-                            <constraint firstItem="dhu-Ux-x1y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uNv-Pd-lAW"/>
                             <constraint firstItem="bCF-sw-m0F" firstAttribute="top" secondItem="ODf-kR-1wI" secondAttribute="bottom" constant="38" id="xh6-20-2vz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -207,8 +173,6 @@
                         <outlet property="raySubview" destination="DL5-c6-rS2" id="CSy-fS-DVw"/>
                         <outlet property="readyButton" destination="NEk-1T-xLF" id="NvN-If-Y1m"/>
                         <outlet property="readyTop" destination="Qjn-Mf-dDi" id="qj5-IU-iTk"/>
-                        <outlet property="restartBottom" destination="DQ8-Io-jhL" id="7hd-iX-1dz"/>
-                        <outlet property="restartTop" destination="dhu-Ux-x1y" id="COq-cj-hvH"/>
                         <outlet property="topMage" destination="ODf-kR-1wI" id="zDq-Vw-Wmr"/>
                     </connections>
                 </viewController>
