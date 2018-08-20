@@ -20,7 +20,10 @@
 		882582EA20BED6250005969D /* strongest_mageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582E920BED6250005969D /* strongest_mageTests.swift */; };
 		882582F520BED6250005969D /* strongest_mageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882582F420BED6250005969D /* strongest_mageUITests.swift */; };
 		885B229B20BF47BD009AEFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885B229A20BF47BD009AEFA5 /* Assets.xcassets */; };
+		D51A83A42127262300718256 /* PhrasesGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51A83A32127262300718256 /* PhrasesGenerator.swift */; };
 		D57BF0E621168B5100AD4E89 /* octin vintage b rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D57BF0E521168B5100AD4E89 /* octin vintage b rg.ttf */; };
+		D5D9ABB821275E7700D02C22 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9ABB721275E7700D02C22 /* GameScene.swift */; };
+		D5D9ABBA21275EA200D02C22 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9ABB921275EA200D02C22 /* Mage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +60,10 @@
 		882582F420BED6250005969D /* strongest_mageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strongest_mageUITests.swift; sourceTree = "<group>"; };
 		882582F620BED6250005969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885B229A20BF47BD009AEFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D51A83A32127262300718256 /* PhrasesGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesGenerator.swift; sourceTree = "<group>"; };
 		D57BF0E521168B5100AD4E89 /* octin vintage b rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "octin vintage b rg.ttf"; sourceTree = "<group>"; };
+		D5D9ABB721275E7700D02C22 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D5D9ABB921275EA200D02C22 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +114,11 @@
 		882582D320BED6220005969D /* strongestMage */ = {
 			isa = PBXGroup;
 			children = (
+				D5D9ABB621275D4F00D02C22 /* models */,
 				885B229A20BF47BD009AEFA5 /* Assets.xcassets */,
+				D51A83A22127243700718256 /* Utility */,
 				882582D420BED6220005969D /* AppDelegate.swift */,
 				882582D620BED6220005969D /* ViewController.swift */,
-				D57BF0E721168BFB00AD4E89 /* fonts */,
 				882582D820BED6220005969D /* Main.storyboard */,
 				882582DD20BED6240005969D /* LaunchScreen.storyboard */,
 				882582E020BED6240005969D /* Info.plist */,
@@ -138,6 +145,14 @@
 			path = strongestMageUITests;
 			sourceTree = "<group>";
 		};
+		D51A83A22127243700718256 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D51A83A32127262300718256 /* PhrasesGenerator.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		D57BF0E721168BFB00AD4E89 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +162,15 @@
 				D57BF0E521168B5100AD4E89 /* octin vintage b rg.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		D5D9ABB621275D4F00D02C22 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9ABB721275E7700D02C22 /* GameScene.swift */,
+				D5D9ABB921275EA200D02C22 /* Mage.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D9ABBA21275EA200D02C22 /* Mage.swift in Sources */,
+				D51A83A42127262300718256 /* PhrasesGenerator.swift in Sources */,
 				882582D720BED6220005969D /* ViewController.swift in Sources */,
+				D5D9ABB821275E7700D02C22 /* GameScene.swift in Sources */,
 				882582D520BED6220005969D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
