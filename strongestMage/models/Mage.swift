@@ -25,12 +25,14 @@ class Mage {
     }
     var body: UIButton!
     var ray: UIImageView!
+    var portal: UIImageView!
     var infoLabel: UILabel!
     var readyButton: UIButton!
 
-    init(body : UIButton, ray: UIImageView, infoLabel: UILabel, readyButton: UIButton) {
+    init(body : UIButton, portal: UIImageView, ray: UIImageView, infoLabel: UILabel, readyButton: UIButton) {
         self.state = .initial
         self.body = body
+        self.portal = portal
         self.ray = ray
         self.infoLabel = infoLabel
         self.readyButton = readyButton
@@ -40,6 +42,7 @@ class Mage {
         switch newState {
         case .initial:
             body.isEnabled = false
+            portal.isHidden = true
             ray.isHidden = true
             infoLabel.isHidden = true
             readyButton.setTitle("ready?", for: .normal)
@@ -52,6 +55,7 @@ class Mage {
             readyButton.isEnabled = false
         case .active:
             body.isEnabled = true
+            portal.isHidden = false
         // TODO: use separate ray for each mage
             infoLabel.isHidden = true
         case .winner:
@@ -62,6 +66,7 @@ class Mage {
             state = .finished
         case .finished:
             body.isEnabled = false
+            portal.isHidden = true
         // TODO: Handle separate ray
             readyButton.setTitle("restart?", for: .normal)
             readyButton.setTitleColor(UIColor(red: 0.00, green: 1.00, blue: 0.82, alpha: 1.0), for: .normal)
