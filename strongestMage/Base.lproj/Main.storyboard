@@ -57,23 +57,36 @@
                             <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DL5-c6-rS2">
                                 <rect key="frame" x="67.5" y="186" width="240" height="306"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackPortal" translatesAutoresizingMaskIntoConstraints="NO" id="VSl-ra-zlp">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackPortal" translatesAutoresizingMaskIntoConstraints="NO" id="VSl-ra-zlp">
                                         <rect key="frame" x="89" y="291" width="61" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="61" id="SAA-H0-P0n"/>
                                             <constraint firstAttribute="height" constant="22" id="oRt-td-ZIv"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView hidden="YES" autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="RAY" translatesAutoresizingMaskIntoConstraints="NO" id="w7Y-Xq-qvp">
-                                        <rect key="frame" x="57" y="-793" width="126" height="1984"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="126" id="OQk-de-D6Z"/>
-                                            <constraint firstAttribute="height" constant="1984" id="Zel-FU-C6Q"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowerRay" translatesAutoresizingMaskIntoConstraints="NO" id="ZWv-ne-Ka8">
+                                        <rect key="frame" x="55" y="154" width="136" height="351"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sceletonRay" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-bk-fzG">
+                                        <rect key="frame" x="54.5" y="-198" width="136" height="354"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCF-sw-m0F">
+                                        <rect key="frame" x="-68" y="48" width="375" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="DFc-Kn-c5G"/>
+                                            <constraint firstAttribute="height" constant="66" id="caJ-kW-Cv3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="19"/>
+                                        <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="VSl-ra-zlp" secondAttribute="bottom" constant="-7" id="89H-3V-GA2"/>
+                                    <constraint firstItem="bCF-sw-m0F" firstAttribute="centerX" secondItem="DL5-c6-rS2" secondAttribute="centerX" id="LyS-bK-XcV"/>
+                                    <constraint firstItem="bCF-sw-m0F" firstAttribute="leading" secondItem="DL5-c6-rS2" secondAttribute="leading" constant="-68" id="V9D-R0-gLX"/>
                                     <constraint firstAttribute="width" constant="240" id="Xee-yu-CgJ"/>
                                     <constraint firstAttribute="trailing" secondItem="VSl-ra-zlp" secondAttribute="trailing" constant="93" id="b8m-w5-fkR"/>
                                     <constraint firstItem="VSl-ra-zlp" firstAttribute="leading" secondItem="DL5-c6-rS2" secondAttribute="leading" constant="89" id="vMI-76-ZY6"/>
@@ -111,16 +124,6 @@
                                 <rect key="frame" x="172" y="311.5" width="31" height="44"/>
                                 <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="17"/>
                                 <color key="textColor" red="0.91700623208518695" green="0.58046427712670023" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCF-sw-m0F">
-                                <rect key="frame" x="0.0" y="244" width="375" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="DFc-Kn-c5G"/>
-                                    <constraint firstAttribute="height" constant="66" id="caJ-kW-Cv3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="19"/>
-                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMH-VG-eW2">
@@ -162,20 +165,17 @@
                             <constraint firstItem="YEJ-0e-pDR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="132" id="DYw-FR-aiP"/>
                             <constraint firstItem="imV-BJ-sGq" firstAttribute="top" secondItem="NEk-1T-xLF" secondAttribute="bottom" id="F6l-V5-91d"/>
                             <constraint firstItem="YMH-VG-eW2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HCx-QQ-dpF"/>
-                            <constraint firstItem="bCF-sw-m0F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KSp-1A-D6p"/>
                             <constraint firstItem="ODf-kR-1wI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ME0-aQ-crG"/>
                             <constraint firstItem="eTc-cA-nRD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eZl-14-lhd"/>
                             <constraint firstItem="nY1-rO-FEf" firstAttribute="top" secondItem="DL5-c6-rS2" secondAttribute="bottom" constant="-10" id="gko-yI-ngt"/>
                             <constraint firstItem="nY1-rO-FEf" firstAttribute="top" secondItem="YMH-VG-eW2" secondAttribute="bottom" constant="38" id="gkp-xh-Jh3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5n2-K8-o5a" secondAttribute="trailing" constant="132" id="khN-OV-42D"/>
-                            <constraint firstItem="bCF-sw-m0F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oeO-O2-OLp"/>
                             <constraint firstItem="DL5-c6-rS2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pAC-M9-tCi"/>
                             <constraint firstItem="YMH-VG-eW2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="pxQ-wz-m59"/>
                             <constraint firstItem="5n2-K8-o5a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="129" id="qW4-Z6-ykK"/>
                             <constraint firstItem="DL5-c6-rS2" firstAttribute="top" secondItem="ODf-kR-1wI" secondAttribute="bottom" constant="-20" id="qaa-bK-oCv"/>
                             <constraint firstItem="YEJ-0e-pDR" firstAttribute="top" secondItem="ODf-kR-1wI" secondAttribute="bottom" constant="-37.5" id="qta-oT-xPC"/>
                             <constraint firstItem="NEk-1T-xLF" firstAttribute="bottom" secondItem="nY1-rO-FEf" secondAttribute="bottom" constant="35" id="u6Y-A8-Vp2"/>
-                            <constraint firstItem="bCF-sw-m0F" firstAttribute="top" secondItem="ODf-kR-1wI" secondAttribute="bottom" constant="38" id="xh6-20-2vz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -184,7 +184,6 @@
                         <outlet property="bottomMage" destination="nY1-rO-FEf" id="74T-y9-Ef4"/>
                         <outlet property="bottomMagePortal" destination="5n2-K8-o5a" id="QmS-Me-5ob"/>
                         <outlet property="infoLabel" destination="eTc-cA-nRD" id="3bc-aP-8g8"/>
-                        <outlet property="ray" destination="w7Y-Xq-qvp" id="sJl-nn-HNi"/>
                         <outlet property="raySubview" destination="DL5-c6-rS2" id="CSy-fS-DVw"/>
                         <outlet property="readyBottom" destination="NEk-1T-xLF" id="IIF-7f-8bC"/>
                         <outlet property="readyTop" destination="Qjn-Mf-dDi" id="qj5-IU-iTk"/>
@@ -198,12 +197,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RAY" width="250" height="3884"/>
-        <image name="blackPortal" width="2000" height="1000"/>
-        <image name="flowerMage" width="5709" height="6803"/>
-        <image name="flowerPortal-1" width="2000" height="1000"/>
-        <image name="sceletonMage" width="5709" height="6803"/>
-        <image name="sceletonPortal-1" width="2000" height="1000"/>
+        <image name="blackPortal" width="1000" height="500"/>
+        <image name="flowerMage" width="2854" height="3401"/>
+        <image name="flowerPortal-1" width="1000" height="500"/>
+        <image name="flowerRay" width="530" height="4286"/>
+        <image name="sceletonMage" width="2854" height="3401"/>
+        <image name="sceletonPortal-1" width="1000" height="500"/>
+        <image name="sceletonRay" width="530" height="4286"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

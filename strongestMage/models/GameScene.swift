@@ -38,7 +38,7 @@ class GameScene {
     var timer = Timer()
     var timerIsOn = false
 
-    init(topMage: Mage!, bottomMage: Mage!,ray: UIImageView!, raySubview: UIView!, infoLabel: UILabel!) {
+    init(topMage: Mage!, bottomMage: Mage!, ray: UIImageView!, raySubview: UIView!, infoLabel: UILabel!) {
         self.topMage = topMage
         self.bottomMage = bottomMage
         self.ray = ray

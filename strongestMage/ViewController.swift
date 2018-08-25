@@ -35,18 +35,8 @@ class ViewController: UIViewController {
     var topMageObject: Mage?
     var bottomMageObject: Mage?
     
-    var sceletonPortal1 : UIImage!
-    var sceletonPortal2 : UIImage!
-    var sceletonPortal3 : UIImage!
-    var sceletonPortal4 : UIImage!
     var sceletonPortals: [UIImage]!
-    var animatedSceletonPortal: UIImage!
-    
-    var flowerPortal1 : UIImage!
-    var flowerPortal2 : UIImage!
-    var flowerPortal3 : UIImage!
     var flowerPortals: [UIImage]!
-    var animatedFlowerPortal: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,22 +49,12 @@ class ViewController: UIViewController {
 
         view.backgroundColor = UIColor.black
         buttonTransformUpSideDown()
+
+        sceletonPortals = [UIImage(named: "sceletonPortal-1"), UIImage(named: "sceletonPortal-2"), UIImage(named: "sceletonPortal-3"), UIImage(named: "sceletonPortal-2")] as! [UIImage]
+        flowerPortals = [ UIImage(named: "flowerPortal-1"),  UIImage(named: "flowerPortal-2"),  UIImage(named: "flowerPortal-3")] as! [UIImage]
         
-        sceletonPortal1 = UIImage(named: "sceletonPortal-1")
-        sceletonPortal2 = UIImage(named: "sceletonPortal-2")
-        sceletonPortal3 = UIImage(named: "sceletonPortal-3")
-        sceletonPortal4 = UIImage(named: "sceletonPortal-4")
-        sceletonPortals = [sceletonPortal1, sceletonPortal2, sceletonPortal3, sceletonPortal4]
-        
-        flowerPortal1 = UIImage(named: "flowerPortal-1")
-        flowerPortal2 = UIImage(named: "flowerPortal-2")
-        flowerPortal3 = UIImage(named: "flowerPortal-3")
-        flowerPortals = [flowerPortal1, flowerPortal2, flowerPortal3]
-        
-        animatedSceletonPortal = UIImage.animatedImage(with: sceletonPortals, duration: 0.6)
-        topMagePortal.image = animatedSceletonPortal
-        animatedFlowerPortal = UIImage.animatedImage(with: flowerPortals, duration: 0.6)
-        bottomMagePortal.image = animatedFlowerPortal
+        topMagePortal.image =  UIImage.animatedImage(with: sceletonPortals, duration: 0.5)
+        bottomMagePortal.image = UIImage.animatedImage(with: flowerPortals, duration: 0.5)
     }
 
     override func didReceiveMemoryWarning() {
