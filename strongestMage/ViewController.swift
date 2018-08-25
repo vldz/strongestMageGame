@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     var topMageObject: Mage?
     var bottomMageObject: Mage?
     
-    var sceletonPortals: [UIImage]!
+    var skeletonPortals: [UIImage]!
     var flowerPortals: [UIImage]!
 
     override func viewDidLoad() {
@@ -50,10 +50,10 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.black
         buttonTransformUpSideDown()
 
-        sceletonPortals = [UIImage(named: "sceletonPortal-1"), UIImage(named: "sceletonPortal-2"), UIImage(named: "sceletonPortal-3"), UIImage(named: "sceletonPortal-2")] as! [UIImage]
+        skeletonPortals = [UIImage(named: "skeletonPortal-1"), UIImage(named: "skeletonPortal-2"), UIImage(named: "skeletonPortal-3"), UIImage(named: "skeletonPortal-2")] as! [UIImage]
         flowerPortals = [ UIImage(named: "flowerPortal-1"),  UIImage(named: "flowerPortal-2"),  UIImage(named: "flowerPortal-3")] as! [UIImage]
         
-        topMagePortal.image =  UIImage.animatedImage(with: sceletonPortals, duration: 0.5)
+        topMagePortal.image =  UIImage.animatedImage(with: skeletonPortals, duration: 0.5)
         bottomMagePortal.image = UIImage.animatedImage(with: flowerPortals, duration: 0.5)
     }
 

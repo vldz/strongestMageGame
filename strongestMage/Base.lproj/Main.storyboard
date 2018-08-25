@@ -47,7 +47,7 @@
                                     <constraint firstAttribute="height" constant="150" id="Mu7-mk-ea9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" image="sceletonMage">
+                                <state key="normal" image="skeletonMage">
                                     <color key="titleColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -64,12 +64,8 @@
                                             <constraint firstAttribute="height" constant="22" id="oRt-td-ZIv"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowerRay" translatesAutoresizingMaskIntoConstraints="NO" id="ZWv-ne-Ka8">
-                                        <rect key="frame" x="55" y="154" width="136" height="351"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sceletonRay" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-bk-fzG">
-                                        <rect key="frame" x="54.5" y="-198" width="136" height="354"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sceletonRay" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-bk-fzG" userLabel="skeletonRay">
+                                        <rect key="frame" x="52" y="-197" width="136" height="354"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCF-sw-m0F">
@@ -82,6 +78,10 @@
                                         <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowerRay" translatesAutoresizingMaskIntoConstraints="NO" id="ZWv-ne-Ka8">
+                                        <rect key="frame" x="52" y="153" width="136" height="351"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="VSl-ra-zlp" secondAttribute="bottom" constant="-7" id="89H-3V-GA2"/>
@@ -136,7 +136,7 @@
                                 <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sceletonPortal-1" translatesAutoresizingMaskIntoConstraints="NO" id="YEJ-0e-pDR">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skeletonPortal-1" translatesAutoresizingMaskIntoConstraints="NO" id="YEJ-0e-pDR">
                                 <rect key="frame" x="148" y="169" width="82" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4gy-w4-AHj"/>
@@ -198,12 +198,12 @@
     </scenes>
     <resources>
         <image name="blackPortal" width="1000" height="500"/>
-        <image name="flowerMage" width="2854" height="3401"/>
+        <image name="flowerMage" width="200" height="250"/>
         <image name="flowerPortal-1" width="1000" height="500"/>
         <image name="flowerRay" width="530" height="4286"/>
-        <image name="sceletonMage" width="2854" height="3401"/>
-        <image name="sceletonPortal-1" width="1000" height="500"/>
         <image name="sceletonRay" width="530" height="4286"/>
+        <image name="skeletonMage" width="200" height="250"/>
+        <image name="skeletonPortal-1" width="1000" height="500"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
