@@ -42,8 +42,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        topMageObject = Mage(body: topMage, portal: topMagePortal, ray: ray, infoLabel: InfoForTopMage, readyButton: readyTop)
-        bottomMageObject = Mage(body: bottomMage, portal: bottomMagePortal, ray: ray, infoLabel: InfoForBottomMage, readyButton: readyBottom)
+//        topMageObject = Mage(body: topMage, portal: topMagePortal, ray: ray, infoLabel: InfoForTopMage, readyButton: readyTop)
+//        bottomMageObject = Mage(body: bottomMage, portal: bottomMagePortal, ray: ray, infoLabel: InfoForBottomMage, readyButton: readyBottom)
 
         gameScene = GameScene(topMage: topMageObject, bottomMage: bottomMageObject, ray: ray, raySubview: raySubview, infoLabel: infoLabel)
 
