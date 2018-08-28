@@ -30,61 +30,67 @@ class Mage {
     var readyButton: UIButton!
 
     init(body : UIButton, portal: UIImageView, ray: UIImageView, infoLabel: UILabel, readyButton: UIButton) {
-        self.state = .initial
         self.body = body
         self.portal = portal
         self.ray = ray
         self.infoLabel = infoLabel
         self.readyButton = readyButton
+        self.state = .initial
     }
 
     func handleStateChange(newState: State) {
         switch newState {
         case .initial:
-            body.isEnabled = false
-            portal.isHidden = true
-            ray.isHidden = true
-            infoLabel.isHidden = true
-            readyButton.setTitle("ready?", for: .normal)
-            readyButton.isEnabled = true
+            self.body.isEnabled = false
+            self.portal.isHidden = true
+            self.ray.isHidden = true
+            self.infoLabel.isHidden = true
+            self.readyButton.setTitle("ready?", for: .normal)
+            self.readyButton.isEnabled = true
         case .countdown:
-            infoLabel.isHidden = false
-            readyButton.isHidden = true
+            self.infoLabel.isHidden = false
+            self.readyButton.isHidden = true
         case .ready:
-            readyButton.setTitle("ready!", for: .normal)
-            readyButton.isEnabled = false
+            self.readyButton.setTitle("ready!", for: .normal)
+            self.readyButton.isEnabled = false
         case .active:
-            body.isEnabled = true
-            portal.isHidden = false
-        // TODO: use separate ray for each mage
-            infoLabel.isHidden = true
+            self.body.isEnabled = true
+            self.portal.isHidden = false
+            self.ray.isHidden = false
+            self.infoLabel.isHidden = true
         case .winner:
             showInfo(info: PhrasesGenerator.getPhrase(.win))
-            state = .finished
+            self.state = .finished
         case .loser:
             showInfo(info: PhrasesGenerator.getPhrase(.lose))
-            state = .finished
+            self.state = .finished
         case .finished:
-            body.isEnabled = false
-            portal.isHidden = true
-        // TODO: Handle separate ray
-            readyButton.setTitle("restart?", for: .normal)
-            readyButton.setTitleColor(UIColor(red: 0.00, green: 1.00, blue: 0.82, alpha: 1.0), for: .normal)
-            readyButton.isEnabled = true
-            readyButton.isHidden = false
+            self.body.isEnabled = false
+            self.portal.isHidden = true
+            self.ray.isHidden = true
+            self.readyButton.setTitle("restart?", for: .normal)
+            self.readyButton.setTitleColor(UIColor(red: 0.00, green: 1.00, blue: 0.82, alpha: 1.0), for: .normal)
+            self.readyButton.isEnabled = true
+            self.readyButton.isHidden = false
         }
     }
 
+    func moveRay(_ direction: Int, _ distance: CGFloat) {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveLinear, animations: {
+            self.ray.center.y += distance * CGFloat(direction)
+        }, completion: nil)
+    }
+
     func showInfo(info: String) {
-        infoLabel.text = info
-        infoLabel.isHidden = false
+        self.infoLabel.text = info
+        self.infoLabel.isHidden = false
     }
 
     func isReady() -> Bool {
-        return state == .ready
+        return self.state == .ready
     }
 
-    func setState(newState: State) {
+    func setState(_ newState: State) {
         self.state = newState
     }
 }
