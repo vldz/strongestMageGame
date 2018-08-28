@@ -46,7 +46,7 @@ class GameScene {
         self.bottomMage = bottomMage
         self.raySubview = raySubview
         self.infoLabel = infoLabel
-        self.distance = raySubview.bounds.height / CGFloat(Float(clicksToWin) * 2.0 * 0.8)
+        self.distance = (raySubview.bounds.height) / CGFloat(Float((clicksToWin) * 2))
         setState(.initial)
     }
 
@@ -89,6 +89,7 @@ class GameScene {
     func moveRay(direction: Int) {
         self.bottomMage.moveRay(direction, distance)
         self.topMage.moveRay(direction, distance)
+        self.clickCounter += 1
         self.clickDifference += direction
         self.totalDistance += distance
         if abs(clickDifference) == clicksToWin {

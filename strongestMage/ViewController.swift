@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         self.topMageObject = Mage(body: self.topMage, portal: self.topMagePortal, ray: self.topMageRay, infoLabel: self.InfoForTopMage, readyButton: self.readyTop)
         self.bottomMageObject = Mage(body: self.bottomMage, portal: self.bottomMagePortal, ray: self.bottomMageRay, infoLabel: self.InfoForBottomMage, readyButton: self.readyBottom)
 
+        print(raySubview.bounds.height)
         self.gameScene = GameScene(topMage: topMageObject, bottomMage: bottomMageObject, raySubview: raySubview, infoLabel: infoLabel)
 
         self.view.backgroundColor = UIColor.black
