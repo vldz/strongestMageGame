@@ -58,6 +58,8 @@ class GameScene {
         case .initial:
             setupScene()
         case .preparing:
+            self.raySubview.setNeedsLayout()
+            self.raySubview.layoutIfNeeded()
             resetStatisticsTimer()
             self.clickCounter = 1
             self.clickDifference = 0
@@ -96,8 +98,6 @@ class GameScene {
     }
 
     func setupScene() {
-        self.raySubview.setNeedsLayout()
-        self.raySubview.layoutIfNeeded()
         self.infoLabel.isHidden = true
         self.topMage.state = .initial
         self.bottomMage.state = .initial
