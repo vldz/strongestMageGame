@@ -33,10 +33,11 @@ class GameScene {
 
     let distance: CGFloat
     let clicksToWin = 8
-    var clickCounter = 1
     var clickDifference = 0
+
+    var clickCounter = 1
     var totalDistance: CGFloat = CGFloat(25)
-    var timerCounter = -3.0
+    var timerCounter = 0.0
     var timer = Timer()
     var timerIsOn = false
 
@@ -61,9 +62,9 @@ class GameScene {
             self.raySubview.setNeedsLayout()
             self.raySubview.layoutIfNeeded()
             resetStatisticsTimer()
-            self.clickCounter = 1
+            self.clickCounter = 0
             self.clickDifference = 0
-            self.totalDistance = 25
+            self.totalDistance = 0
             if topMage.isReady() && bottomMage.isReady() {
                 state = .countdown
             }
@@ -107,35 +108,6 @@ class GameScene {
         self.state = newState
     }
 
-    func startTimer() {
-        self.countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
-    }
-
-    func endTimer() {
-        self.countdownTimer.invalidate()
-        self.topMage.state = .active
-        self.bottomMage.state = .active
-        self.state = .active
-    }
-
-    @objc
-    func updateTime() {
-        self.totalTime -= 1
-        if self.totalTime > 0 {
-            updateTimerInfo()
-        } else if self.totalTime == 0 {
-            self.topMage.showInfo(info: PhrasesGenerator.getPhrase(.start))
-            self.bottomMage.showInfo(info: PhrasesGenerator.getPhrase(.start))
-        } else {
-            endTimer()
-        }
-    }
-
-    func updateTimerInfo() {
-        self.topMage.showInfo(info: String(totalTime))
-        self.bottomMage.showInfo(info: String(totalTime))
-    }
-
     func randomInfo () {
         let randomNumber = arc4random_uniform(3)
         self.infoLabel.isHidden = false
@@ -152,16 +124,5 @@ class GameScene {
         }
     }
 
-    func startStatisticsTimer() {
-        self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateStatisticsTimer), userInfo: nil, repeats: true)
-    }
 
-    @objc func updateStatisticsTimer() {
-        self.timerCounter += 0.1
-    }
-
-    func resetStatisticsTimer(){
-        self.timer.invalidate()
-        self.timerCounter = 0
-    }
 }
