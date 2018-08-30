@@ -16,12 +16,13 @@ class ViewController: UIViewController {
         return true
     }
 
-    @IBOutlet weak var ray: UIImageView!
     @IBOutlet weak var topMage: UIButton!
     @IBOutlet weak var bottomMage: UIButton!
     @IBOutlet weak var bottomMagePortal: UIImageView!
     @IBOutlet weak var topMagePortal: UIImageView!
-    
+    @IBOutlet weak var topMageRay: UIImageView!
+    @IBOutlet weak var bottomMageRay: UIImageView!
+
     @IBOutlet weak var readyBottom: UIButton!
     @IBOutlet weak var readyTop: UIButton!
 
@@ -42,19 +43,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        topMageObject = Mage(body: topMage, portal: topMagePortal, ray: ray, infoLabel: InfoForTopMage, readyButton: readyTop)
-        bottomMageObject = Mage(body: bottomMage, portal: bottomMagePortal, ray: ray, infoLabel: InfoForBottomMage, readyButton: readyBottom)
+        self.topMageObject = Mage(body: self.topMage, portal: self.topMagePortal, ray: self.topMageRay, infoLabel: self.InfoForTopMage, readyButton: self.readyTop)
+        self.bottomMageObject = Mage(body: self.bottomMage, portal: self.bottomMagePortal, ray: self.bottomMageRay, infoLabel: self.InfoForBottomMage, readyButton: self.readyBottom)
 
-        gameScene = GameScene(topMage: topMageObject, bottomMage: bottomMageObject, ray: ray, raySubview: raySubview, infoLabel: infoLabel)
+        print(raySubview.bounds.height)
+        self.gameScene = GameScene(topMage: topMageObject, bottomMage: bottomMageObject, raySubview: raySubview, infoLabel: infoLabel)
 
-        view.backgroundColor = UIColor.black
+        self.view.backgroundColor = UIColor.black
         buttonTransformUpSideDown()
 
         self.skeletonPortals = [UIImage(named: "skeletonPortal-1"), UIImage(named: "skeletonPortal-2"), UIImage(named: "skeletonPortal-3"), UIImage(named: "skeletonPortal-2")] as! [UIImage]
         self.flowerPortals = [ UIImage(named: "flowerPortal-1"),  UIImage(named: "flowerPortal-2"),  UIImage(named: "flowerPortal-3")] as! [UIImage]
         
-        topMagePortal.image =  UIImage.animatedImage(with: skeletonPortals, duration: 0.5)
-        bottomMagePortal.image = UIImage.animatedImage(with: flowerPortals, duration: 0.5)
+        self.topMagePortal.image =  UIImage.animatedImage(with: skeletonPortals, duration: 0.5)
+        self.bottomMagePortal.image = UIImage.animatedImage(with: flowerPortals, duration: 0.5)
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,28 +65,29 @@ class ViewController: UIViewController {
     }
 
     func buttonTransformUpSideDown() {
-        topMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        InfoForTopMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        readyTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        topMagePortal.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        self.topMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        self.InfoForTopMage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        self.readyTop.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        self.topMagePortal.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        self.topMageRay.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
     }
 
     @IBAction func ready(_ sender: Any) {
-        bottomMageObject!.setState(newState: .ready)
-        gameScene!.setState(newState: .preparing)
+        self.bottomMageObject!.setState(.ready)
+        self.gameScene!.setState(newState: .preparing)
     }
 
     @IBAction func readyTop(_ sender: Any) {
-        topMageObject!.setState(newState: .ready)
-        gameScene!.setState(newState: .preparing)
+        self.topMageObject!.setState(.ready)
+        self.gameScene!.setState(newState: .preparing)
     }
 
 
     @IBAction func moveToBottom(_ sender: Any) {
-        gameScene!.moveRay(direction: 1)
+        self.gameScene!.moveRay(direction: 1)
     }
 
     @IBAction func moveToTop(_ sender: Any) {
-        gameScene!.moveRay(direction: -1)
+        self.gameScene!.moveRay(direction: -1)
     }
 }
