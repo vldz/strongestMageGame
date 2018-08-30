@@ -24,6 +24,8 @@
 		D5149B992134E4B20043EA59 /* CountDownTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5149B982134E4B20043EA59 /* CountDownTimerExtension.swift */; };
 		D51A83A42127262300718256 /* PhrasesGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51A83A32127262300718256 /* PhrasesGenerator.swift */; };
 		D57BF0E621168B5100AD4E89 /* octin vintage b rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D57BF0E521168B5100AD4E89 /* octin vintage b rg.ttf */; };
+		D5B8C862213875B40045011F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B8C860213875B40045011F /* MenuViewController.swift */; };
+		D5B8C863213875B40045011F /* MainMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B8C861213875B40045011F /* MainMenuNavigationController.swift */; };
 		D5D9ABB821275E7700D02C22 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9ABB721275E7700D02C22 /* GameScene.swift */; };
 		D5D9ABBA21275EA200D02C22 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9ABB921275EA200D02C22 /* Mage.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		D5149B982134E4B20043EA59 /* CountDownTimerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerExtension.swift; sourceTree = "<group>"; };
 		D51A83A32127262300718256 /* PhrasesGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesGenerator.swift; sourceTree = "<group>"; };
 		D57BF0E521168B5100AD4E89 /* octin vintage b rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "octin vintage b rg.ttf"; sourceTree = "<group>"; };
+		D5B8C860213875B40045011F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = strongestMage/MenuViewController.swift; sourceTree = SOURCE_ROOT; };
+		D5B8C861213875B40045011F /* MainMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuNavigationController.swift; path = strongestMage/MainMenuNavigationController.swift; sourceTree = SOURCE_ROOT; };
 		D5D9ABB721275E7700D02C22 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D5D9ABB921275EA200D02C22 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +127,8 @@
 				D51A83A22127243700718256 /* Utility */,
 				882582D420BED6220005969D /* AppDelegate.swift */,
 				882582D620BED6220005969D /* ViewController.swift */,
+				D5B8C861213875B40045011F /* MainMenuNavigationController.swift */,
+				D5B8C860213875B40045011F /* MenuViewController.swift */,
 				882582D820BED6220005969D /* Main.storyboard */,
 				882582DD20BED6240005969D /* LaunchScreen.storyboard */,
 				882582E020BED6240005969D /* Info.plist */,
@@ -317,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B8C863213875B40045011F /* MainMenuNavigationController.swift in Sources */,
 				D5D9ABBA21275EA200D02C22 /* Mage.swift in Sources */,
 				D51A83A42127262300718256 /* PhrasesGenerator.swift in Sources */,
 				D5149B972134E3F40043EA59 /* StatisticTimerExtension.swift in Sources */,
@@ -324,6 +331,7 @@
 				D5149B992134E4B20043EA59 /* CountDownTimerExtension.swift in Sources */,
 				D5D9ABB821275E7700D02C22 /* GameScene.swift in Sources */,
 				882582D520BED6220005969D /* AppDelegate.swift in Sources */,
+				D5B8C862213875B40045011F /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
