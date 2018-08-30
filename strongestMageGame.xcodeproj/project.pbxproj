@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		677CF1002137E7BB0081AB38 /* MainMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677CF0FF2137E7BB0081AB38 /* MainMenuNavigationController.swift */; };
+		677CF10221385D070081AB38 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677CF10121385D070081AB38 /* MenuViewController.swift */; };
 		67C796012114B59800F751A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882582E020BED6240005969D /* Info.plist */; };
 		67C796052114BB2F00F751A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882582E020BED6240005969D /* Info.plist */; };
 		67C796062114BB3400F751A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882582E020BED6240005969D /* Info.plist */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		677CF0FF2137E7BB0081AB38 /* MainMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuNavigationController.swift; sourceTree = "<group>"; };
+		677CF10121385D070081AB38 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		67C796072116F35C00F751A6 /* Wizards' Magic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wizards' Magic.ttf"; sourceTree = "<group>"; };
 		67C796092116F37200F751A6 /* wizzta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wizzta.ttf; sourceTree = "<group>"; };
 		67C7960B211767B300F751A6 /* DJB I Love a Ginger.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DJB I Love a Ginger.ttf"; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				882582DD20BED6240005969D /* LaunchScreen.storyboard */,
 				882582E020BED6240005969D /* Info.plist */,
 				D57BF0E721168BFB00AD4E89 /* fonts */,
+				677CF0FF2137E7BB0081AB38 /* MainMenuNavigationController.swift */,
+				677CF10121385D070081AB38 /* MenuViewController.swift */,
 			);
 			path = strongestMage;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				D5D9ABBA21275EA200D02C22 /* Mage.swift in Sources */,
 				D51A83A42127262300718256 /* PhrasesGenerator.swift in Sources */,
 				882582D720BED6220005969D /* ViewController.swift in Sources */,
+				677CF10221385D070081AB38 /* MenuViewController.swift in Sources */,
+				677CF1002137E7BB0081AB38 /* MainMenuNavigationController.swift in Sources */,
 				D5D9ABB821275E7700D02C22 /* GameScene.swift in Sources */,
 				882582D520BED6220005969D /* AppDelegate.swift in Sources */,
 			);

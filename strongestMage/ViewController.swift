@@ -42,16 +42,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-//        topMageObject = Mage(body: topMage, portal: topMagePortal, ray: ray, infoLabel: InfoForTopMage, readyButton: readyTop)
-//        bottomMageObject = Mage(body: bottomMage, portal: bottomMagePortal, ray: ray, infoLabel: InfoForBottomMage, readyButton: readyBottom)
+        topMageObject = Mage(body: topMage, portal: topMagePortal, ray: ray, infoLabel: InfoForTopMage, readyButton: readyTop)
+        bottomMageObject = Mage(body: bottomMage, portal: bottomMagePortal, ray: ray, infoLabel: InfoForBottomMage, readyButton: readyBottom)
 
         gameScene = GameScene(topMage: topMageObject, bottomMage: bottomMageObject, ray: ray, raySubview: raySubview, infoLabel: infoLabel)
 
         view.backgroundColor = UIColor.black
         buttonTransformUpSideDown()
 
-        skeletonPortals = [UIImage(named: "skeletonPortal-1"), UIImage(named: "skeletonPortal-2"), UIImage(named: "skeletonPortal-3"), UIImage(named: "skeletonPortal-2")] as! [UIImage]
-        flowerPortals = [ UIImage(named: "flowerPortal-1"),  UIImage(named: "flowerPortal-2"),  UIImage(named: "flowerPortal-3")] as! [UIImage]
+        self.skeletonPortals = [UIImage(named: "skeletonPortal-1"), UIImage(named: "skeletonPortal-2"), UIImage(named: "skeletonPortal-3"), UIImage(named: "skeletonPortal-2")] as! [UIImage]
+        self.flowerPortals = [ UIImage(named: "flowerPortal-1"),  UIImage(named: "flowerPortal-2"),  UIImage(named: "flowerPortal-3")] as! [UIImage]
         
         topMagePortal.image =  UIImage.animatedImage(with: skeletonPortals, duration: 0.5)
         bottomMagePortal.image = UIImage.animatedImage(with: flowerPortals, duration: 0.5)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZSA-ig-Pxx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODf-kR-1wI">
-                                <rect key="frame" x="125" y="56" width="125" height="150"/>
+                                <rect key="frame" x="125" y="100" width="125" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="53G-6h-pBl"/>
                                     <constraint firstAttribute="height" constant="150" id="Mu7-mk-ea9"/>
@@ -55,10 +55,10 @@
                                 </connections>
                             </button>
                             <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DL5-c6-rS2">
-                                <rect key="frame" x="67.5" y="186" width="240" height="306"/>
+                                <rect key="frame" x="67.5" y="230" width="240" height="262"/>
                                 <subviews>
                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackPortal" translatesAutoresizingMaskIntoConstraints="NO" id="VSl-ra-zlp">
-                                        <rect key="frame" x="89" y="291" width="61" height="22"/>
+                                        <rect key="frame" x="89" y="247" width="61" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="61" id="SAA-H0-P0n"/>
                                             <constraint firstAttribute="height" constant="22" id="oRt-td-ZIv"/>
@@ -93,7 +93,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjn-Mf-dDi">
-                                <rect key="frame" x="135" y="20" width="105" height="51"/>
+                                <rect key="frame" x="135" y="64" width="105" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="105" id="7YT-74-NPN"/>
                                     <constraint firstAttribute="height" constant="51" id="PX1-4t-b7a"/>
@@ -137,7 +137,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skeletonPortal-1" translatesAutoresizingMaskIntoConstraints="NO" id="YEJ-0e-pDR">
-                                <rect key="frame" x="148" y="169" width="82" height="44"/>
+                                <rect key="frame" x="148" y="213" width="82" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4gy-w4-AHj"/>
                                     <constraint firstAttribute="width" constant="82" id="9qr-0g-tBz"/>
@@ -178,6 +178,7 @@
                             <constraint firstItem="NEk-1T-xLF" firstAttribute="bottom" secondItem="nY1-rO-FEf" secondAttribute="bottom" constant="35" id="u6Y-A8-Vp2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aH8-U7-Tqu"/>
                     <connections>
                         <outlet property="InfoForBottomMage" destination="YMH-VG-eW2" id="M1W-Vq-PKJ"/>
                         <outlet property="InfoForTopMage" destination="bCF-sw-m0F" id="643-0D-waG"/>
@@ -193,17 +194,165 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.199999999999999" y="31.03448275862069"/>
+            <point key="canvasLocation" x="970.39999999999998" y="31.03448275862069"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FeG-VB-wWv">
+            <objects>
+                <viewController id="m9N-Tm-rg5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pNp-wr-sx3"/>
+                        <viewControllerLayoutGuide type="bottom" id="cgn-MV-Qnu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UDe-cJ-Ux9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxW-g7-U6t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="748"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mvA-52-EVb">
+            <objects>
+                <viewController id="Dfa-mf-1hT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yDd-IP-POI"/>
+                        <viewControllerLayoutGuide type="bottom" id="TXc-zf-zg1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="leC-Rx-Mtc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AqT-Bm-pck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="1463"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JoK-Hr-dVN">
+            <objects>
+                <viewController id="ZQ9-HZ-irN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GB4-Vy-tjw"/>
+                        <viewControllerLayoutGuide type="bottom" id="3zP-4H-H6P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wwk-MT-7gF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0S-En-hm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="2190"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="IOs-Qt-VIK">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZSA-ig-Pxx" customClass="MenuViewController" customModule="strongestMage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9i4-hp-VqL"/>
+                        <viewControllerLayoutGuide type="bottom" id="wWu-7K-4Yx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Q6-hZ-AXc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhr-6b-G9R">
+                                <rect key="frame" x="142" y="237" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="I5r-GR-G8O"/>
+                                    <constraint firstAttribute="height" constant="90" id="tgk-LC-tMn"/>
+                                </constraints>
+                                <state key="normal" image="playButton"/>
+                                <connections>
+                                    <action selector="playButton:" destination="ZSA-ig-Pxx" eventType="touchUpInside" id="VvA-ve-BfQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd4-hE-NYh">
+                                <rect key="frame" x="142" y="335" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="29E-ys-agS"/>
+                                    <constraint firstAttribute="height" constant="90" id="XSy-cF-lTZ"/>
+                                </constraints>
+                                <state key="normal" image="skinsButton"/>
+                                <connections>
+                                    <segue destination="m9N-Tm-rg5" kind="show" id="QL8-eR-8gM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcI-Qe-tV3">
+                                <rect key="frame" x="142" y="433" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="CAU-lc-ZAB"/>
+                                    <constraint firstAttribute="width" constant="90" id="oF2-ON-z5g"/>
+                                </constraints>
+                                <state key="normal" image="rulesButton"/>
+                                <connections>
+                                    <segue destination="Dfa-mf-1hT" kind="show" id="hUm-PL-6Hc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeJ-dw-2Zi">
+                                <rect key="frame" x="142" y="531" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="jo9-pl-Wvs"/>
+                                    <constraint firstAttribute="width" constant="90" id="mgZ-t8-Lc7"/>
+                                </constraints>
+                                <state key="normal" image="aboutButton"/>
+                                <connections>
+                                    <action selector="aboutButton:" destination="ZSA-ig-Pxx" eventType="touchUpInside" id="FQC-T6-ajG"/>
+                                    <segue destination="ZQ9-HZ-irN" kind="show" id="imS-Sx-Rdv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gameName" translatesAutoresizingMaskIntoConstraints="NO" id="31J-Un-dKT">
+                                <rect key="frame" x="25" y="28" width="324" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4n-sL-h5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-986.39999999999998" y="747.9760119940031"/>
+        </scene>
+        <!--Main Menu Navigation Controller-->
+        <scene sceneID="nTK-xr-5Og">
+            <objects>
+                <navigationController storyboardIdentifier="MainMenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tQA-2K-D6T" customClass="MainMenuNavigationController" customModule="strongestMage" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eIU-4E-c6Z">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CRz-Ra-p9Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjx-wf-Xeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50" y="748"/>
         </scene>
     </scenes>
     <resources>
+        <image name="aboutButton" width="250" height="250"/>
         <image name="blackPortal" width="1000" height="500"/>
         <image name="flowerMage" width="200" height="250"/>
         <image name="flowerPortal-1" width="1000" height="500"/>
         <image name="flowerRay" width="530" height="4286"/>
+        <image name="gameName" width="375" height="250"/>
+        <image name="playButton" width="250" height="250"/>
+        <image name="rulesButton" width="250" height="250"/>
         <image name="sceletonRay" width="530" height="4286"/>
         <image name="skeletonMage" width="200" height="250"/>
         <image name="skeletonPortal-1" width="1000" height="500"/>
+        <image name="skinsButton" width="250" height="250"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
