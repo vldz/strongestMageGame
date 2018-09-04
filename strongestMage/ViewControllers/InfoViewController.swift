@@ -10,7 +10,14 @@ import Foundation
 import UIKit
 
 class InfoViewController: UIViewController {
+    
+    @IBOutlet weak var headerLabel: UILabel!
+    @IBAction func emailTo(_ sender: Any) {
+        let email = "vanillastorm420@gmail.com"
+        let url = URL(string: "mailto:\(email)")
+        UIApplication.shared.open(url!)
+    }
+    
     override func viewDidLoad() {
-        
     }
 }

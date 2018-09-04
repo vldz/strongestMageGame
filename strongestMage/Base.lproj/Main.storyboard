@@ -320,8 +320,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="skins are not avaliable yet..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-kR-0Ic">
+                                <rect key="frame" x="81" y="311.5" width="213" height="44"/>
+                                <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="17"/>
+                                <color key="textColor" red="0.99271977700220093" green="1" blue="0.65337902883012389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bso-ff-YsS">
+                                <rect key="frame" x="151" y="12" width="73" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="QmS-wD-hnA"/>
+                                    <constraint firstAttribute="width" constant="73" id="cux-X9-bom"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="28"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXj-1f-vcG">
-                                <rect key="frame" x="10" y="6" width="56" height="56"/>
+                                <rect key="frame" x="159" y="591" width="56" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="FEe-1n-hI6"/>
                                     <constraint firstAttribute="height" constant="56" id="fBq-tQ-sEK"/>
@@ -334,19 +350,15 @@
                                     <segue destination="ZSA-ig-Pxx" kind="show" id="4Dx-Ie-WH9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="skins are not avaliable yet..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-kR-0Ic">
-                                <rect key="frame" x="81" y="311.5" width="213" height="44"/>
-                                <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="17"/>
-                                <color key="textColor" red="0.99271977700220093" green="1" blue="0.65337902883012389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="DXj-1f-vcG" firstAttribute="top" secondItem="Rfr-Cm-8Vs" secondAttribute="top" constant="6" id="9ug-TW-7xR"/>
-                            <constraint firstItem="DXj-1f-vcG" firstAttribute="leading" secondItem="Rfr-Cm-8Vs" secondAttribute="leading" constant="10" id="bVT-i7-VjK"/>
+                            <constraint firstItem="DXj-1f-vcG" firstAttribute="centerX" secondItem="Rfr-Cm-8Vs" secondAttribute="centerX" id="FYX-cs-ohm"/>
+                            <constraint firstItem="bso-ff-YsS" firstAttribute="top" secondItem="Rfr-Cm-8Vs" secondAttribute="top" constant="12" id="Hxj-r9-UW2"/>
+                            <constraint firstItem="bso-ff-YsS" firstAttribute="centerX" secondItem="Rfr-Cm-8Vs" secondAttribute="centerX" id="ZxU-Np-ZfI"/>
                             <constraint firstItem="DSc-kR-0Ic" firstAttribute="centerY" secondItem="Rfr-Cm-8Vs" secondAttribute="centerY" id="pSd-Lt-5Jb"/>
                             <constraint firstItem="DSc-kR-0Ic" firstAttribute="centerX" secondItem="Rfr-Cm-8Vs" secondAttribute="centerX" id="yQd-S7-VKK"/>
+                            <constraint firstItem="l1f-Yk-grT" firstAttribute="top" secondItem="DXj-1f-vcG" secondAttribute="bottom" constant="20" id="zxT-1G-MW7"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -367,7 +379,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OP-d1-l37">
-                                <rect key="frame" x="10" y="6" width="56" height="56"/>
+                                <rect key="frame" x="159" y="591" width="56" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="Sdb-GG-ac9"/>
                                     <constraint firstAttribute="height" constant="56" id="a7z-HH-hFg"/>
@@ -386,12 +398,24 @@
                                 <color key="textColor" red="1" green="0.77386648437995587" blue="0.7645017225595232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDI-as-DbJ">
+                                <rect key="frame" x="151" y="12" width="73" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="MvH-XV-Qha"/>
+                                    <constraint firstAttribute="width" constant="73" id="Rd6-WP-QHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.83262415360833009" blue="0.82325729041843188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="9OP-d1-l37" firstAttribute="top" secondItem="b1M-gR-SIJ" secondAttribute="top" constant="6" id="LIT-Qw-cLa"/>
+                            <constraint firstItem="lzk-7B-EE3" firstAttribute="top" secondItem="9OP-d1-l37" secondAttribute="bottom" constant="20" id="8lP-Y2-0RG"/>
+                            <constraint firstItem="9OP-d1-l37" firstAttribute="centerX" secondItem="b1M-gR-SIJ" secondAttribute="centerX" id="I7O-Ta-56w"/>
                             <constraint firstItem="gwE-hT-tUY" firstAttribute="centerY" secondItem="b1M-gR-SIJ" secondAttribute="centerY" id="Lyn-1A-a23"/>
-                            <constraint firstItem="9OP-d1-l37" firstAttribute="leading" secondItem="b1M-gR-SIJ" secondAttribute="leading" constant="10" id="PSW-Ko-tqa"/>
+                            <constraint firstItem="ZDI-as-DbJ" firstAttribute="centerX" secondItem="b1M-gR-SIJ" secondAttribute="centerX" id="aDA-DK-ujG"/>
+                            <constraint firstItem="ZDI-as-DbJ" firstAttribute="top" secondItem="b1M-gR-SIJ" secondAttribute="top" constant="12" id="c7t-1z-zms"/>
                             <constraint firstItem="gwE-hT-tUY" firstAttribute="centerX" secondItem="b1M-gR-SIJ" secondAttribute="centerX" id="sed-bK-IoA"/>
                         </constraints>
                     </view>
@@ -413,7 +437,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2v-PR-bJ3">
-                                <rect key="frame" x="10" y="6" width="56" height="56"/>
+                                <rect key="frame" x="159.5" y="591" width="56" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="AGb-rV-JbY"/>
                                     <constraint firstAttribute="height" constant="56" id="bC9-6r-Sun"/>
@@ -426,25 +450,65 @@
                                     <segue destination="ZSA-ig-Pxx" kind="show" id="rPT-bY-Uut"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaZ-Ov-vJB">
-                                <rect key="frame" x="155" y="311.5" width="65" height="44"/>
-                                <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaZ-Ov-vJB">
+                                <rect key="frame" x="151.5" y="12" width="73" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Agf-1f-vGR"/>
+                                    <constraint firstAttribute="width" constant="73" id="JHj-4V-IQ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="28"/>
                                 <color key="textColor" red="0.9474366372819002" green="0.74265873042339825" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="exS-cl-bwv">
+                                <rect key="frame" x="0.0" y="236" width="375" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Uw1-0S-WTO"/>
+                                    <constraint firstAttribute="height" constant="195" id="m4i-6k-YT8"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-11" translatesAutoresizingMaskIntoConstraints="NO" id="uzJ-cI-z77">
+                                <rect key="frame" x="16" y="99" width="264" height="89"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="for contact, support or any ideas :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEC-xK-9pk">
+                                        <rect key="frame" x="0.0" y="0.0" width="263.5" height="44"/>
+                                        <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="17"/>
+                                        <color key="textColor" red="0.92905418382485139" green="0.80172795670434582" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL2-tE-XOb">
+                                        <rect key="frame" x="0.0" y="33" width="215" height="56"/>
+                                        <fontDescription key="fontDescription" name="DJBILoveaGinger" family="DJB I Love a Ginger" pointSize="17"/>
+                                        <state key="normal" title="vanillastorm420@gmail.com">
+                                            <color key="titleColor" red="0.96660749227816933" green="0.90671344201290716" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="emailTo:" destination="8n0-et-0zJ" eventType="touchUpInside" id="mDY-4W-SHX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="v2v-PR-bJ3" firstAttribute="leading" secondItem="fRU-8M-bEb" secondAttribute="leading" constant="10" id="enB-nf-QhF"/>
+                            <constraint firstItem="uzJ-cI-z77" firstAttribute="top" secondItem="GaZ-Ov-vJB" secondAttribute="bottom" constant="15" id="8BD-US-VXv"/>
+                            <constraint firstItem="exS-cl-bwv" firstAttribute="top" secondItem="uzJ-cI-z77" secondAttribute="bottom" constant="48" id="G6G-Pd-tkc"/>
+                            <constraint firstItem="v2v-PR-bJ3" firstAttribute="centerX" secondItem="fRU-8M-bEb" secondAttribute="centerX" id="PGe-PC-lGh"/>
+                            <constraint firstItem="uzJ-cI-z77" firstAttribute="leading" secondItem="fRU-8M-bEb" secondAttribute="leadingMargin" id="Q80-gy-5UR"/>
+                            <constraint firstItem="BEq-7A-KnP" firstAttribute="top" secondItem="v2v-PR-bJ3" secondAttribute="bottom" constant="20" id="fhO-ys-XZF"/>
+                            <constraint firstItem="exS-cl-bwv" firstAttribute="centerX" secondItem="fRU-8M-bEb" secondAttribute="centerX" id="jjb-Xw-M1P"/>
                             <constraint firstItem="GaZ-Ov-vJB" firstAttribute="centerX" secondItem="fRU-8M-bEb" secondAttribute="centerX" id="pBU-Nb-H1O"/>
-                            <constraint firstItem="GaZ-Ov-vJB" firstAttribute="centerY" secondItem="fRU-8M-bEb" secondAttribute="centerY" id="tC9-7F-XSQ"/>
-                            <constraint firstItem="v2v-PR-bJ3" firstAttribute="top" secondItem="fRU-8M-bEb" secondAttribute="top" constant="6" id="vMg-ND-O4Q"/>
+                            <constraint firstItem="GaZ-Ov-vJB" firstAttribute="top" secondItem="fRU-8M-bEb" secondAttribute="top" constant="12" id="vhJ-3e-p9p"/>
+                            <constraint firstItem="uzJ-cI-z77" firstAttribute="leading" secondItem="fRU-8M-bEb" secondAttribute="leadingMargin" id="yiR-eO-E3B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerLabel" destination="GaZ-Ov-vJB" id="aaV-Hv-hrv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BoC-ej-Mp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274" y="1484"/>
+            <point key="canvasLocation" x="272.80000000000001" y="1483.8080959520241"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nTK-xr-5Og">
@@ -472,6 +536,7 @@
         <image name="flowerPortal-1" width="1000" height="500"/>
         <image name="flowerRay" width="530" height="4286"/>
         <image name="gameName" width="375" height="250"/>
+        <image name="logo" width="945" height="708"/>
         <image name="playButton" width="250" height="250"/>
         <image name="rulesButton" width="250" height="250"/>
         <image name="sceletonRay" width="530" height="4286"/>
@@ -480,7 +545,7 @@
         <image name="skinsButton" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sY1-gw-hE1"/>
+        <segue reference="4Dx-Ie-WH9"/>
         <segue reference="IU2-Qg-uzY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
