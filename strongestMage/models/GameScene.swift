@@ -27,6 +27,7 @@ class GameScene {
     var bottomMage: Mage!
     var infoLabel: UILabel!
     var raySubview: UIView!
+    var menuButton: UIButton!
 
     var countdownTimer: Timer!
     var totalTime = 3
@@ -41,11 +42,12 @@ class GameScene {
     var timer = Timer()
     var timerIsOn = false
 
-    init(topMage: Mage!, bottomMage: Mage!, raySubview: UIView!, infoLabel: UILabel!) {
+    init(topMage: Mage!, bottomMage: Mage!, raySubview: UIView!, infoLabel: UILabel!, menuButton: UIButton!) {
         self.topMage = topMage
         self.bottomMage = bottomMage
         self.raySubview = raySubview
         self.infoLabel = infoLabel
+        self.menuButton = menuButton
         self.distance = (raySubview.bounds.height) / CGFloat(Float((clicksToWin) * 2))
         setState(.initial)
     }
@@ -81,6 +83,7 @@ class GameScene {
             self.bottomMage.state = .active
         case .finished:
             self.randomInfo()
+            self.menuButton.isHidden = false
             self.state = .preparing
         }
     }
@@ -101,6 +104,7 @@ class GameScene {
 
     func setupScene() {
         self.infoLabel.isHidden = true
+        self.menuButton.isHidden = true
         self.topMage.state = .initial
         self.bottomMage.state = .initial
     }
@@ -121,7 +125,7 @@ class GameScene {
         case 3:
             self.infoLabel.text = "total distance is \(self.totalDistance) km."
         default:
-            self.infoLabel.text = "so what?"
+            self.infoLabel.text = "total \(self.clickCounter) clicks were made."
         }
     }
 

@@ -39,6 +39,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var InfoForBottomMage: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
 
+    @IBOutlet weak var menuButton: UIButton!
+    
     var gameScene: GameScene?
     var topMageObject: Mage?
     var bottomMageObject: Mage?
@@ -54,7 +56,7 @@ class GameViewController: UIViewController {
         self.bottomMageObject = Mage(body: self.bottomMage, portal: self.bottomMagePortal, ray: self.bottomMageRay, infoLabel: self.InfoForBottomMage, readyButton: self.readyBottom)
 
         print(raySubview.bounds.height)
-        self.gameScene = GameScene(topMage: topMageObject, bottomMage: bottomMageObject, raySubview: raySubview, infoLabel: infoLabel)
+        self.gameScene = GameScene(topMage: topMageObject, bottomMage: bottomMageObject, raySubview: raySubview, infoLabel: infoLabel, menuButton: menuButton)
 
         self.view.backgroundColor = UIColor.black
         buttonTransformUpSideDown()
