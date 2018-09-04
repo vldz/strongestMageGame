@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-class MainMenuNavigationController: UINavigationController {
+class NavigationController: UINavigationController {
     override func viewDidLoad() {
-        super.viewDidLoad()
+       //super.viewDidLoad()
     }
 }

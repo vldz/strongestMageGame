@@ -10,10 +10,17 @@ import UIKit
 import Darwin
 import Foundation
 
-class ViewController: UIViewController {
+class GameViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Hide the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
     @IBOutlet weak var topMage: UIButton!
