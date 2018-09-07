@@ -32,8 +32,7 @@ class AudioEffectsGenerator {
         []
     ]
     
-    
-    var player: AVAudioPlayer?
+    static var player: AVAudioPlayer?
     
     static func getAudio(_ type: AudioType) -> String {
         let currAudio = audioName[type.rawValue]
