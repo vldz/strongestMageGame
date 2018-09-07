@@ -13,16 +13,16 @@
 		6732893D2142B5E1008FC3A0 /* readySounds in Resources */ = {isa = PBXBuildFile; fileRef = 673289352142B5DE008FC3A0 /* readySounds */; };
 		6732893E2142B5E1008FC3A0 /* wait4Tolong in Resources */ = {isa = PBXBuildFile; fileRef = 673289362142B5DF008FC3A0 /* wait4Tolong */; };
 		673289402142B5E1008FC3A0 /* counter in Resources */ = {isa = PBXBuildFile; fileRef = 673289382142B5DF008FC3A0 /* counter */; };
-		673289412142B5E1008FC3A0 /* gameInMenuEnter in Resources */ = {isa = PBXBuildFile; fileRef = 673289392142B5E0008FC3A0 /* gameInMenuEnter */; };
+		673289412142B5E1008FC3A0 /* MenuSound in Resources */ = {isa = PBXBuildFile; fileRef = 673289392142B5E0008FC3A0 /* MenuSound */; };
 		673289422142B5E1008FC3A0 /* spell in Resources */ = {isa = PBXBuildFile; fileRef = 6732893A2142B5E0008FC3A0 /* spell */; };
-		6732894C2142B647008FC3A0 /* science_fiction_laser_gun_slinky.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289442142B646008FC3A0 /* science_fiction_laser_gun_slinky.mp3 */; };
-		6732894D2142B647008FC3A0 /* science_fiction_laser_005.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289452142B646008FC3A0 /* science_fiction_laser_005.mp3 */; };
-		6732894E2142B647008FC3A0 /* sound_design_effect_descend_futuristic_short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289462142B646008FC3A0 /* sound_design_effect_descend_futuristic_short.mp3 */; };
-		6732894F2142B647008FC3A0 /* julien_matthey_science_fiction_laser_001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289472142B646008FC3A0 /* julien_matthey_science_fiction_laser_001.mp3 */; };
-		673289502142B647008FC3A0 /* LIGHTSABER.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289482142B646008FC3A0 /* LIGHTSABER.mp3 */; };
-		673289512142B647008FC3A0 /* little_robot_sound_factory_Laser_04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289492142B646008FC3A0 /* little_robot_sound_factory_Laser_04.mp3 */; };
-		673289522142B647008FC3A0 /* LIGHTSABER #2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6732894A2142B647008FC3A0 /* LIGHTSABER #2.mp3 */; };
-		673289532142B647008FC3A0 /* science_fiction_laser_002.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6732894B2142B647008FC3A0 /* science_fiction_laser_002.mp3 */; };
+		6732894D2142B647008FC3A0 /* laser4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289452142B646008FC3A0 /* laser4.mp3 */; };
+		6732894F2142B647008FC3A0 /* laser1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289472142B646008FC3A0 /* laser1.mp3 */; };
+		673289502142B647008FC3A0 /* lightsaber2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289482142B646008FC3A0 /* lightsaber2.mp3 */; };
+		673289512142B647008FC3A0 /* laser2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289492142B646008FC3A0 /* laser2.mp3 */; };
+		673289522142B647008FC3A0 /* lightsaber1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6732894A2142B647008FC3A0 /* lightsaber1.mp3 */; };
+		673289532142B647008FC3A0 /* laser3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6732894B2142B647008FC3A0 /* laser3.mp3 */; };
+		6732895A2142C479008FC3A0 /* play.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 673289592142C479008FC3A0 /* play.mp3 */; };
+		6732895C2142C550008FC3A0 /* femalePlay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6732895B2142C550008FC3A0 /* femalePlay.mp3 */; };
 		677CF1002137E7BB0081AB38 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677CF0FF2137E7BB0081AB38 /* NavigationController.swift */; };
 		677CF10221385D070081AB38 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677CF10121385D070081AB38 /* MenuViewController.swift */; };
 		677CF111213C8DD00081AB38 /* StatisticTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677CF10F213C8DD00081AB38 /* StatisticTimerExtension.swift */; };
@@ -73,16 +73,20 @@
 		673289352142B5DE008FC3A0 /* readySounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = readySounds; sourceTree = "<group>"; };
 		673289362142B5DF008FC3A0 /* wait4Tolong */ = {isa = PBXFileReference; lastKnownFileType = folder; path = wait4Tolong; sourceTree = "<group>"; };
 		673289382142B5DF008FC3A0 /* counter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = counter; sourceTree = "<group>"; };
-		673289392142B5E0008FC3A0 /* gameInMenuEnter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gameInMenuEnter; sourceTree = "<group>"; };
+		673289392142B5E0008FC3A0 /* MenuSound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MenuSound; sourceTree = "<group>"; };
 		6732893A2142B5E0008FC3A0 /* spell */ = {isa = PBXFileReference; lastKnownFileType = folder; path = spell; sourceTree = "<group>"; };
-		673289442142B646008FC3A0 /* science_fiction_laser_gun_slinky.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = science_fiction_laser_gun_slinky.mp3; sourceTree = "<group>"; };
-		673289452142B646008FC3A0 /* science_fiction_laser_005.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = science_fiction_laser_005.mp3; sourceTree = "<group>"; };
-		673289462142B646008FC3A0 /* sound_design_effect_descend_futuristic_short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_design_effect_descend_futuristic_short.mp3; sourceTree = "<group>"; };
-		673289472142B646008FC3A0 /* julien_matthey_science_fiction_laser_001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = julien_matthey_science_fiction_laser_001.mp3; sourceTree = "<group>"; };
-		673289482142B646008FC3A0 /* LIGHTSABER.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LIGHTSABER.mp3; sourceTree = "<group>"; };
-		673289492142B646008FC3A0 /* little_robot_sound_factory_Laser_04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = little_robot_sound_factory_Laser_04.mp3; sourceTree = "<group>"; };
-		6732894A2142B647008FC3A0 /* LIGHTSABER #2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "LIGHTSABER #2.mp3"; sourceTree = "<group>"; };
-		6732894B2142B647008FC3A0 /* science_fiction_laser_002.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = science_fiction_laser_002.mp3; sourceTree = "<group>"; };
+		673289452142B646008FC3A0 /* laser4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laser4.mp3; sourceTree = "<group>"; };
+		673289472142B646008FC3A0 /* laser1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laser1.mp3; sourceTree = "<group>"; };
+		673289482142B646008FC3A0 /* lightsaber2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lightsaber2.mp3; sourceTree = "<group>"; };
+		673289492142B646008FC3A0 /* laser2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laser2.mp3; sourceTree = "<group>"; };
+		6732894A2142B647008FC3A0 /* lightsaber1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lightsaber1.mp3; sourceTree = "<group>"; };
+		6732894B2142B647008FC3A0 /* laser3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laser3.mp3; sourceTree = "<group>"; };
+		673289542142C311008FC3A0 /* swoosh2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swoosh2.mp3; sourceTree = "<group>"; };
+		673289552142C312008FC3A0 /* swoosh1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swoosh1.mp3; sourceTree = "<group>"; };
+		673289562142C312008FC3A0 /* swoosh3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swoosh3.mp3; sourceTree = "<group>"; };
+		673289572142C312008FC3A0 /* swooshDramatic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swooshDramatic.mp3; sourceTree = "<group>"; };
+		673289592142C479008FC3A0 /* play.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = play.mp3; sourceTree = "<group>"; };
+		6732895B2142C550008FC3A0 /* femalePlay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = femalePlay.mp3; sourceTree = "<group>"; };
 		677CF0FF2137E7BB0081AB38 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		677CF10121385D070081AB38 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		677CF10F213C8DD00081AB38 /* StatisticTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticTimerExtension.swift; sourceTree = "<group>"; };
@@ -141,9 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				673289382142B5DF008FC3A0 /* counter */,
-				673289432142B625008FC3A0 /* ray */,
-				673289392142B5E0008FC3A0 /* gameInMenuEnter */,
 				673289332142B5DD008FC3A0 /* goToMenuSound */,
+				673289392142B5E0008FC3A0 /* MenuSound */,
+				673289582142C470008FC3A0 /* playButtonSound */,
+				673289432142B625008FC3A0 /* ray */,
 				673289352142B5DE008FC3A0 /* readySounds */,
 				6732893A2142B5E0008FC3A0 /* spell */,
 				673289362142B5DF008FC3A0 /* wait4Tolong */,
@@ -155,16 +160,27 @@
 		673289432142B625008FC3A0 /* ray */ = {
 			isa = PBXGroup;
 			children = (
-				673289472142B646008FC3A0 /* julien_matthey_science_fiction_laser_001.mp3 */,
-				6732894A2142B647008FC3A0 /* LIGHTSABER #2.mp3 */,
-				673289482142B646008FC3A0 /* LIGHTSABER.mp3 */,
-				673289492142B646008FC3A0 /* little_robot_sound_factory_Laser_04.mp3 */,
-				6732894B2142B647008FC3A0 /* science_fiction_laser_002.mp3 */,
-				673289452142B646008FC3A0 /* science_fiction_laser_005.mp3 */,
-				673289442142B646008FC3A0 /* science_fiction_laser_gun_slinky.mp3 */,
-				673289462142B646008FC3A0 /* sound_design_effect_descend_futuristic_short.mp3 */,
+				673289552142C312008FC3A0 /* swoosh1.mp3 */,
+				673289542142C311008FC3A0 /* swoosh2.mp3 */,
+				673289562142C312008FC3A0 /* swoosh3.mp3 */,
+				673289572142C312008FC3A0 /* swooshDramatic.mp3 */,
+				673289472142B646008FC3A0 /* laser1.mp3 */,
+				6732894A2142B647008FC3A0 /* lightsaber1.mp3 */,
+				673289482142B646008FC3A0 /* lightsaber2.mp3 */,
+				673289492142B646008FC3A0 /* laser2.mp3 */,
+				6732894B2142B647008FC3A0 /* laser3.mp3 */,
+				673289452142B646008FC3A0 /* laser4.mp3 */,
 			);
 			path = ray;
+			sourceTree = "<group>";
+		};
+		673289582142C470008FC3A0 /* playButtonSound */ = {
+			isa = PBXGroup;
+			children = (
+				6732895B2142C550008FC3A0 /* femalePlay.mp3 */,
+				673289592142C479008FC3A0 /* play.mp3 */,
+			);
+			path = playButtonSound;
 			sourceTree = "<group>";
 		};
 		67E94348213E9480006DC239 /* ViewControllers */ = {
@@ -371,28 +387,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				67C7960A2116F37200F751A6 /* wizzta.ttf in Resources */,
-				673289502142B647008FC3A0 /* LIGHTSABER.mp3 in Resources */,
+				673289502142B647008FC3A0 /* lightsaber2.mp3 in Resources */,
 				6732893C2142B5E1008FC3A0 /* win:losee in Resources */,
-				673289522142B647008FC3A0 /* LIGHTSABER #2.mp3 in Resources */,
+				673289522142B647008FC3A0 /* lightsaber1.mp3 in Resources */,
 				882582DF20BED6240005969D /* LaunchScreen.storyboard in Resources */,
 				673289402142B5E1008FC3A0 /* counter in Resources */,
 				885B229B20BF47BD009AEFA5 /* Assets.xcassets in Resources */,
 				673289422142B5E1008FC3A0 /* spell in Resources */,
+				6732895C2142C550008FC3A0 /* femalePlay.mp3 in Resources */,
 				67C796082116F35C00F751A6 /* Wizards' Magic.ttf in Resources */,
 				6732893B2142B5E1008FC3A0 /* goToMenuSound in Resources */,
+				6732895A2142C479008FC3A0 /* play.mp3 in Resources */,
 				882582DA20BED6220005969D /* Main.storyboard in Resources */,
-				673289532142B647008FC3A0 /* science_fiction_laser_002.mp3 in Resources */,
-				6732894D2142B647008FC3A0 /* science_fiction_laser_005.mp3 in Resources */,
-				6732894F2142B647008FC3A0 /* julien_matthey_science_fiction_laser_001.mp3 in Resources */,
+				673289532142B647008FC3A0 /* laser3.mp3 in Resources */,
+				6732894D2142B647008FC3A0 /* laser4.mp3 in Resources */,
+				6732894F2142B647008FC3A0 /* laser1.mp3 in Resources */,
 				6732893E2142B5E1008FC3A0 /* wait4Tolong in Resources */,
 				67C796012114B59800F751A6 /* Info.plist in Resources */,
-				673289512142B647008FC3A0 /* little_robot_sound_factory_Laser_04.mp3 in Resources */,
+				673289512142B647008FC3A0 /* laser2.mp3 in Resources */,
 				6732893D2142B5E1008FC3A0 /* readySounds in Resources */,
-				673289412142B5E1008FC3A0 /* gameInMenuEnter in Resources */,
+				673289412142B5E1008FC3A0 /* MenuSound in Resources */,
 				D57BF0E621168B5100AD4E89 /* octin vintage b rg.ttf in Resources */,
-				6732894E2142B647008FC3A0 /* sound_design_effect_descend_futuristic_short.mp3 in Resources */,
 				67C7960C211767B400F751A6 /* DJB I Love a Ginger.ttf in Resources */,
-				6732894C2142B647008FC3A0 /* science_fiction_laser_gun_slinky.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

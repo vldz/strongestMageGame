@@ -46,6 +46,7 @@ class Mage {
             self.ray.isHidden = true
             self.infoLabel.isHidden = true
             self.readyButton.setTitle("ready?", for: .normal)
+            //AudioEffectsGenerator.playSound(.readySound)
             self.readyButton.isEnabled = true
         case .countdown:
             self.infoLabel.isHidden = false

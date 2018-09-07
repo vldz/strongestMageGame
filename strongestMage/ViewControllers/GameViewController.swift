@@ -84,11 +84,13 @@ class GameViewController: UIViewController {
     @IBAction func ready(_ sender: Any) {
         self.bottomMageObject!.setState(.ready)
         self.gameScene!.setState(newState: .preparing)
+        AudioEffectsGenerator.playSound(.readySound)
     }
 
     @IBAction func readyTop(_ sender: Any) {
         self.topMageObject!.setState(.ready)
         self.gameScene!.setState(newState: .preparing)
+        AudioEffectsGenerator.playSound(.readySound)
     }
 
 

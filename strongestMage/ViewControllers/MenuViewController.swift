@@ -15,6 +15,7 @@ class MenuViewController: GameViewController {
     }
     @IBAction func playButton(_ sender: Any) {
         navigateToMainInterface()
+        AudioEffectsGenerator.playSound(.playButtonSound)
     }
     
     private func navigateToMainInterface() {
