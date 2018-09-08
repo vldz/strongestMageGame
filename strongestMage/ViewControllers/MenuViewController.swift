@@ -11,7 +11,7 @@ import UIKit
 
 class MenuViewController: GameViewController {
     override func viewDidLoad() {
-        
+        AudioEffectsGenerator.playSound(.menuSound)
     }
     @IBAction func playButton(_ sender: Any) {
         navigateToMainInterface()
