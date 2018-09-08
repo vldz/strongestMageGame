@@ -101,4 +101,9 @@ class GameViewController: UIViewController {
     @IBAction func moveToTop(_ sender: Any) {
         self.gameScene!.moveRay(direction: -1)
     }
+    
+    @IBAction func menuSound(_ sender: Any) {
+        AudioEffectsGenerator.playSound(.goToMenuSound)
+    }
+    
 }

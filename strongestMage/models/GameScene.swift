@@ -71,6 +71,7 @@ class GameScene {
                 state = .countdown
             }
         case .countdown:
+            self.menuButton.isHidden = true
             self.totalTime = 3
             updateTimerInfo()
             self.infoLabel.isHidden = true
@@ -99,12 +100,12 @@ class GameScene {
             self.bottomMage.state = (clickDifference > 0) ? .winner : .loser
             self.topMage.state = (clickDifference < 0) ? .winner : .loser
             self.state = .finished
+            AudioEffectsGenerator.playSound(.winLoseSound)
         }
     }
 
     func setupScene() {
         self.infoLabel.isHidden = true
-        self.menuButton.isHidden = true
         self.topMage.state = .initial
         self.bottomMage.state = .initial
     }

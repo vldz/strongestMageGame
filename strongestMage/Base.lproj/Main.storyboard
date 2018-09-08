@@ -166,6 +166,7 @@
                                     <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="menuSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAw-Wf-j2Y"/>
                                     <segue destination="ZSA-ig-Pxx" kind="show" id="sY1-gw-hE1"/>
                                 </connections>
                             </button>

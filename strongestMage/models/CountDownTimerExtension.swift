@@ -9,7 +9,9 @@
 import Foundation
 
 extension GameScene {
+    
     func startTimer() {
+        
         self.countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
 
@@ -24,8 +26,10 @@ extension GameScene {
     func updateTime() {
         self.totalTime -= 1
         if self.totalTime > 0 {
+            AudioEffectsGenerator.playSound(.counterSound)
             updateTimerInfo()
         } else if self.totalTime == 0 {
+            AudioEffectsGenerator.playSound(.spellSound)
             self.topMage.showInfo(info: PhrasesGenerator.getPhrase(.start))
             self.bottomMage.showInfo(info: PhrasesGenerator.getPhrase(.start))
         } else {
