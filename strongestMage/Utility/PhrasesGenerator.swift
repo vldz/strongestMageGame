@@ -20,21 +20,22 @@ class PhrasesGenerator {
          "avada kedavra.",
          "fokusi-pokusi!",
          "pew? pew!",
-         "go!"],
+         "wizard his ass!"],
 
         [ "you are the best!",
           "strongest mage.",
           "amazing skill.",
           "domination!",
-          "winner winner."],
+          "winner winner.",
+          "boiii!"],
 
         [ "you are soo bad!",
           "weakest mage.",
           "no one loves you.",
           "weaked sick.",
           "pussy.",
-          "chicken chicken."
-        ]
+          "chicken chicken.",
+          "you suck."]
     ]
 
     static func getPhrase(_ type: PhraseType) -> String {

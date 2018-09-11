@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>strongestMage</string>
+	<string>Mage Club</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,7 +24,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Wizards&apos; Magic.ttf</string>
+		<string>Wizards' Magic.ttf</string>
 		<string>wizzta</string>
 		<string>octin vintage b rg.ttf</string>
 		<string>DJB I Love a Ginger.ttf</string>
