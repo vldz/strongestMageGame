@@ -47,14 +47,14 @@ class AudioEffectsGenerator {
         let randomIndex = Int(arc4random_uniform(UInt32(currAudio.count)))
         
         
-       let url = Bundle.main.url(forResource: "\(currAudio[randomIndex])", withExtension: "mp3") //else { return }
+        guard let url = Bundle.main.url(forResource: "\(currAudio[randomIndex])", withExtension: "mp3") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             //try AVAudioSession.sharedInstance().setActive(true)
 
             /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-            player = try AVAudioPlayer(contentsOf: url!, fileTypeHint: AVFileType.mp3.rawValue)
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
             guard let player = player else { return }
 
