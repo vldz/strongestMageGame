@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "sceletonMage.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "skeletonMage.png",
       "scale" : "2x"
     },
     {
