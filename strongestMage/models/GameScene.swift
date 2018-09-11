@@ -97,8 +97,8 @@ class GameScene {
         self.clickDifference += direction
         self.totalDistance += distance
         if abs(clickDifference) == clicksToWin {
-            self.bottomMage.state = (clickDifference > 0) ? .winner : .loser
-            self.topMage.state = (clickDifference < 0) ? .winner : .loser
+            self.bottomMage.state = (clickDifference < 0) ? .winner : .loser
+            self.topMage.state = (clickDifference > 0) ? .winner : .loser
             self.state = .finished
             AudioEffectsGenerator.playSound(.winLoseSound)
         }
